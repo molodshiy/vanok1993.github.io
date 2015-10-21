@@ -24,10 +24,9 @@ img{
 }
 
 .border_bottom{
-    padding-left: 20px;
     border-bottom: 1px solid black;
 }
 
-.feedback{
+.padding_left{
     padding-left: 20px;
 }
