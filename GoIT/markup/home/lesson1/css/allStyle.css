@@ -33,4 +33,9 @@ img{
 
 h4{
     font: normal 20px serif;
+    margin-bottom: 0;
+}
+
+.margin_top_none{
+    margin-top: 0;
 }
