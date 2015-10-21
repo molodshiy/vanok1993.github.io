@@ -23,7 +23,7 @@ img{
     height: 150px;
 }
 
-.borderBottom{
+.border_bottom{
     padding-left: 20px;
     border-bottom: 1px solid black;
 }
