@@ -25,9 +25,13 @@ body {
     list-style: none;
     display: inline-block;
     padding: 10px 20px;
-    color: white;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+}
+
+.menu > li > a {
+    color: white;
+    text-decoration: none;
 }
 
 .menu > li:hover {
@@ -61,6 +65,12 @@ body {
     padding: 10px 0 10px 40px;
     font-weight: 600;
     background: #f9f9f9;
+}
+
+
+.content_left_menu > li > a {
+    color: #636363;
+    text-decoration: none;
 }
 
 img {
@@ -98,15 +108,16 @@ footer {
     padding: 10px 40px;
 }
 
-.footer_menu > li:hover {
+.footer_menu > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer_menu > li > a:hover {
     text-decoration: underline;
 }
 
 .footer_menu > li:last-child {
     display: block;
     float: right;
-}
-
-.footer_menu > li:last-child:hover {
-    text-decoration: none;
 }
