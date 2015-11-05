@@ -1,8 +1,10 @@
-html {
+body {
     background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
 }
 
-body {
+.container {
     width: 1060px;
     margin: 0 auto;
     font: 14px/22px sans-serif;
