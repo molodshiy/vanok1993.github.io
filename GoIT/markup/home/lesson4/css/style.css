@@ -1,0 +1,16 @@
+
+header {
+    background-color: red;
+    float: left;
+    width: 50%;
+}
+
+.content {
+    background-color: green;
+    float: right;
+    width: 40%;
+}
+
+footer {
+    background-color: yellow;
+}

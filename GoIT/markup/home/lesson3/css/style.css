@@ -66,7 +66,7 @@ body {
 }
 
 .content_left_menu > li:hover {
-    padding: 10px 0 10px 40px;
+    padding-left: 40px;
     font-weight: 600;
     background: #f9f9f9;
 }
