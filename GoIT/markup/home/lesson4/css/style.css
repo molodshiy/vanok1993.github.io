@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background.png");
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 38px auto 0;
+    width: 1000px;
+    background-color: white;
+}
+
+.logo {
+    margin: 11px 0 0 28px;
+    vertical-align: bottom;
+}
+
+.info_header {
+    font-weight: 700;
+}
+
+.info {
+    line-height: 18px;
+    float: right;
+    margin: 8px 28px 0 0;
+    color: #5fa5bb;
+    font-size: 12px;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.flags {
+    margin: 30px 30px 0 0;
+    display: flex;
+    clear: right;
+    float: right;
+}
+
+.flags > div {
+    width: 56px;
+    height: 50px;
+    float: right;
+    font-size: 10px;
+    text-align: center;
+}
+
+.flags > div > a {
+    color: #5fa5bb;
+    font-family: sans-serif;
+}
+
+.flags:after {
+    clear: both;
+}
+
+.main_img {
+    vertical-align: bottom;
+}
+
+#nav {
+    font-size: 12px;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+
+#nav li {
+    float: left;
+    position: relative;
+    display: block;
+    width: 142px;
+    text-align: center;
+}
+
+#nav li a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+#nav ul {
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    float: none;
+}
+
+#nav ul a {
+    white-space: nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    display: block;
+}
+
+#nav li:hover ul {
+    /* Выводим выпадающий пункт при наведении курсора */
+    left: 0; /* Приносим его обратно на экран, когда нужно */
+    opacity: 1; /* Делаем непрозрачным */
+}
+
+#nav li:hover ul li a:hover {
+    /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+    background: #333;
+}
