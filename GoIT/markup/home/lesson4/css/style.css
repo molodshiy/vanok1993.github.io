@@ -87,7 +87,6 @@ body {
     text-decoration: none;
 }
 
-/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
 #nav ul {
     list-style: none;
     position: absolute;
@@ -101,17 +100,15 @@ body {
 }
 
 #nav ul a {
-    white-space: nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    white-space: nowrap;
     display: block;
 }
 
 #nav li:hover ul {
-    /* Выводим выпадающий пункт при наведении курсора */
-    left: 0; /* Приносим его обратно на экран, когда нужно */
-    opacity: 1; /* Делаем непрозрачным */
+    left: 0;
+    opacity: 1;
 }
 
 #nav li:hover ul li a:hover {
-    /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
     background: #333;
 }
