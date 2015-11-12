@@ -62,7 +62,7 @@ body {
     vertical-align: bottom;
 }
 
-#nav {
+.menu {
     font-size: 12px;
     float: left;
     width: 100%;
@@ -71,7 +71,7 @@ body {
     background: #333;
 }
 
-#nav li {
+.menu li {
     float: left;
     position: relative;
     display: block;
@@ -79,7 +79,7 @@ body {
     text-align: center;
 }
 
-#nav li a {
+.menu li a {
     display: block;
     padding: 5px;
     color: #fff;
@@ -87,7 +87,7 @@ body {
     text-decoration: none;
 }
 
-#nav ul {
+.menu ul {
     list-style: none;
     position: absolute;
     left: -9999px;
@@ -95,20 +95,20 @@ body {
     padding: 0;
 }
 
-#nav ul li {
+.menu ul li {
     float: none;
 }
 
-#nav ul a {
+.menu ul a {
     white-space: nowrap;
     display: block;
 }
 
-#nav li:hover ul {
+.menu li:hover ul {
     left: 0;
     opacity: 1;
 }
 
-#nav li:hover ul li a:hover {
+.menu li:hover ul li a:hover {
     background: #333;
 }
