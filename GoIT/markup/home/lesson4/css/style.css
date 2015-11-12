@@ -16,11 +16,11 @@ body {
     vertical-align: bottom;
 }
 
-.info_header {
+.contacts_header {
     font-weight: 700;
 }
 
-.info {
+.contacts {
     line-height: 18px;
     float: right;
     margin: 8px 28px 0 0;
@@ -111,4 +111,65 @@ body {
 
 .menu li:hover ul li a:hover {
     background: #333;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.info {
+    float: left;
+    width: 21%;
+    font-size: 18px;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+
+}
+
+.info > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.info > ul > li {
+    font-size: 14px;
+    list-style: none;
+    padding: 5px 0 5px 15px;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+}
+
+.news {
+    float: right;
+    width: 21%;
+    font-size: 18px;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.news > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.news > ul > li {
+    font-size: 14px;
+    list-style: none;
+    padding: 5px 0 4px 15px;
+}
+.main_content {
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin: 10px;
 }
