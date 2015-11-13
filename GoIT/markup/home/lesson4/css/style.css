@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../img/background.png");
+    background: url("../img/background.png");
     font-family: sans-serif;
 }
 
@@ -9,6 +9,8 @@ body {
     margin: 38px auto 0;
     width: 1000px;
     background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    border-bottom: 3px solid #333;
 }
 
 .logo {
@@ -68,6 +70,9 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75);
     background: #333;
 }
 
@@ -81,7 +86,7 @@ body {
 
 .menu li a {
     display: block;
-    padding: 5px;
+    padding: 8px;
     color: #fff;
     background: #333;
     text-decoration: none;
@@ -116,6 +121,7 @@ body {
 .content {
     width: 100%;
     overflow: hidden;
+    padding-bottom: 15px;
 }
 
 .info {
@@ -136,11 +142,11 @@ body {
 .info > ul > li {
     font-size: 14px;
     list-style: none;
-    padding: 5px 0 5px 15px;
+    padding: 4px 0 3px 15px;
 }
 
 h4 {
-    margin: 0;
+    margin: 10px 0 0 0;
     text-align: center;
 }
 
@@ -161,8 +167,9 @@ h4 {
 .news > ul > li {
     font-size: 14px;
     list-style: none;
-    padding: 5px 0 4px 15px;
+    padding: 4px 0 3px 15px;
 }
+
 .main_content {
     padding-bottom: 20000px;
     margin-bottom: -20000px;
@@ -171,5 +178,6 @@ h4 {
 footer {
     text-align: center;
     color: white;
-    margin: 10px;
+    margin: 9px;
+    font-size: 12px;
 }
