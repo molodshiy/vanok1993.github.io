@@ -176,8 +176,12 @@ h4 {
 }
 
 footer {
-    text-align: center;
     color: white;
-    margin: 9px;
+    width: 1000px;
+    margin: 9px auto;
     font-size: 12px;
+}
+
+footer h4 {
+    margin: 0;
 }
