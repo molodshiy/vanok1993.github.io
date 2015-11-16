@@ -18,16 +18,24 @@ body {
     vertical-align: bottom;
 }
 
-.contacts_header {
-    font-weight: 700;
+h3 {
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 26px;
 }
 
 .contacts {
-    line-height: 18px;
     float: right;
-    margin: 8px 28px 0 0;
     color: #5fa5bb;
     font-size: 12px;
+    margin: 2px 28px 0 0;
+}
+
+.contacts > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 18px;
 }
 
 .clearfix:after {
