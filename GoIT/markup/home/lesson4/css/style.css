@@ -129,7 +129,7 @@ h3 {
 .content {
     width: 100%;
     overflow: hidden;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
 }
 
 .info {
@@ -142,15 +142,12 @@ h3 {
 
 }
 
-.info > ul {
-    margin: 0;
-    padding: 0;
-}
-
-.info > ul > li {
+.info > p {
     font-size: 14px;
     list-style: none;
-    padding: 4px 0 3px 15px;
+    padding-left: 15px;
+    margin: 0;
+    line-height: 24px;
 }
 
 h4 {
@@ -167,15 +164,12 @@ h4 {
     margin-bottom: -20000px;
 }
 
-.news > ul {
-    margin: 0;
-    padding: 0;
-}
-
-.news > ul > li {
+.news > p {
     font-size: 14px;
     list-style: none;
-    padding: 4px 0 3px 15px;
+    padding-left: 15px;
+    margin: 0;
+    line-height: 24px;
 }
 
 .main_content {
@@ -192,4 +186,5 @@ footer {
 
 footer h4 {
     margin: 0;
+    font-weight: 300;
 }
