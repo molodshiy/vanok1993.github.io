@@ -173,6 +173,9 @@ h4 {
 }
 
 .main_content {
+    padding-top: 10px;
+    padding-right: 225px;
+    padding-left: 225px;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
 }
