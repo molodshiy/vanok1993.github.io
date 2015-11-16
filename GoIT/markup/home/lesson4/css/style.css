@@ -51,15 +51,16 @@ h3 {
     float: right;
 }
 
-.flags > div {
+.flags > li {
     width: 56px;
     height: 50px;
     float: right;
     font-size: 10px;
     text-align: center;
+    list-style: none;
 }
 
-.flags > div > a {
+.flags > li > a {
     color: #5fa5bb;
     font-family: sans-serif;
 }
