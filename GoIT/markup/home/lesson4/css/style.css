@@ -104,8 +104,7 @@ h3 {
 .menu ul {
     list-style: none;
     position: absolute;
-    left: -9999px;
-    opacity: 0;
+    display: none;
     padding: 0;
 }
 
@@ -119,8 +118,7 @@ h3 {
 }
 
 .menu li:hover ul {
-    left: 0;
-    opacity: 1;
+    display: block;
 }
 
 .menu li:hover ul li a:hover {
@@ -174,10 +172,7 @@ h4 {
 }
 
 .main_content {
-    padding-top: 10px;
-    padding-right: 225px;
-    padding-left: 225px;
-    padding-bottom: 20000px;
+    padding: 10px 225px 2000px 225px;
     margin-bottom: -20000px;
 }
 
