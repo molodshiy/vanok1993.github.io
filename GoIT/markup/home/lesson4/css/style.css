@@ -88,6 +88,8 @@ h3 {
 .menu li {
     float: left;
     position: relative;
+    top: 0;
+    left: 0;
     display: block;
     width: 142px;
     text-align: center;
