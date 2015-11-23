@@ -172,8 +172,8 @@ h4 {
 }
 
 .main_content {
-    padding: 10px 225px 2000px 225px;
-    margin-bottom: -20000px;
+    padding-bottom: 2000px;
+    margin: 10px 225px -20000px 225px;
 }
 
 footer {
