@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 910px;
+    padding: 17px 45px 0;
+    margin: 0 auto;
+}
+
+.phone_numbers {
+    float: left;
+    width: 290px;
+}
+
+.icon_phone {
+    width: 22px;
+    height: 22px;
+    float: left;
+    position: relative;
+    background-color: #103d62;
+    border-radius: 22px;
+}
+
+.icon_phone img {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+}
+
+.number {
+    float: left;
+    display: block;
+    margin: 0 8px;
+}
+
+.registration {
+    float: left;
+    width: 500px;
+    background-color: #103d62;
+}
+
+.input_text {
+    float: left;
+    margin: 4px;
+    width: 115px;
+}
+
+.enter, .registr {
+    color: white;
+    margin: 0 3px 0 3px;
+    text-decoration: none;
+}
+
+.enter {
+    position: relative;
+}
+
+.enter:after {
+    position: absolute;
+    right: -5px;
+    top: 3px;
+    float: left;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: white;
+}
+
+.forgot_password {
+    color: #bfbfbf;
+}
+
+.nav_icons {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 25px;
+    margin: 0 0 0 20px;
+    background: url("../img/small_nav_background.png") no-repeat;
+}
+
+.nav_icon {
+    position: absolute;
+    top: 6px;
+}
+
+.icon_home {
+    left: 10px;
+}
+
+.icon_map {
+    left: 32px;
+}
+
+.icon_letter {
+    top: 7px;
+    left: 56px;
+}
+
+.nav_bar {
+    height: 34px;
+    color: white;
+    background-color: #202326;
+}
+.menu {
+    display: inline-block;
+    line-height: 34px;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+.shop_account {
+    color: white;
+    display: inline-block;
+}
+
