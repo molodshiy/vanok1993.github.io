@@ -1,13 +1,10 @@
 /**
  * Created by ivan.datsiv on 12/1/2015.
  */
-var i = 5;
+var arr = [];
 
-var arr = new Array(i);
-
-for(var j = 0; i > 0; j++){
-    arr[j] = prompt("Enter Name", "Name");
-    --i;
+for(var i = 0; i < 5; i++){
+    arr[i] = prompt("Enter Name", "Name");
 }
 
 var userName = prompt("Enter you Name", "You Name");
