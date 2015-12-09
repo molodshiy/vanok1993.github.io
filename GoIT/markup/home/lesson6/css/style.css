@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .clearfix:after {
@@ -111,6 +112,7 @@
     color: white;
     background-color: #202326;
 }
+
 .menu {
     display: inline-block;
     line-height: 34px;
@@ -128,3 +130,50 @@
     display: inline-block;
 }
 
+.search_car {
+    width: 412px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+h3 {
+    color: #154468;
+}
+
+.disks, .tires {
+    width: 180px;
+    display: inline-block;
+}
+
+select {
+    max-width: 100px;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.year_prod {
+    max-width: 56px;
+    min-width: 56px;
+}
+
+.text_info {
+    font-size: 8px;
+    color: grey;
+}
+
+h4 {
+    font-weight: bold;
+    color: #154468;
+}
+
+h5 {
+    font-size: 10px;
+    display: inline-block;
+    width: 75px;
+}
+
+.short_search {
+    text-align: right;
+    display: block;
+    margin-right: 48px;
+}
