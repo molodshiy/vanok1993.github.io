@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+ul > li {
+    list-style: none;
+}
+
 .clearfix:after {
     content: "";
     display: block;
@@ -12,7 +16,7 @@
 
 .container {
     width: 910px;
-    padding: 17px 45px 0;
+    padding: 18px 45px 0;
     margin: 0 auto;
 }
 
@@ -140,11 +144,6 @@ h3 {
     color: #154468;
 }
 
-.disks, .tires {
-    width: 180px;
-    display: inline-block;
-}
-
 select {
     max-width: 100px;
     min-width: 100px;
@@ -176,4 +175,44 @@ h5 {
     text-align: right;
     display: block;
     margin-right: 48px;
+}
+
+.catalog {
+    width: 192px;
+    float: left;
+}
+
+.goods {
+    width: 520px;
+    float: left;
+}
+
+.tires li {
+    float: left;
+}
+
+.brands {
+    width: 192px;
+    float: left;
+}
+
+.partners {
+    text-align: center;
+}
+
+footer {
+    background-color: #213a4d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul li {
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+footer p {
+    color: #7f4740;
 }
