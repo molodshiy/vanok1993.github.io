@@ -1,7 +1,18 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../font/helveticaneue-thin-webfont.eot');
+    src: url('../font/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('../font/helveticaneue-thin-webfont.woff') format('woff'),
+    url('../font/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Helvetica Neue Regular', sans-serif;
 }
 
 ul > li {
@@ -22,45 +33,69 @@ ul > li {
 
 .phone_numbers {
     float: left;
-    width: 290px;
+    margin: 4px 0px 0 7px;
 }
 
 .icon_phone {
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
     float: left;
     position: relative;
     background-color: #103d62;
-    border-radius: 22px;
+    border-radius: 21px;
 }
 
 .icon_phone img {
     position: absolute;
-    top: 2px;
+    top: 1px;
     left: 4px;
 }
 
 .number {
     float: left;
     display: block;
-    margin: 0 8px;
+    margin: 0 6px;
+    font-weight: bold;
+    color: #5e696d;
+    letter-spacing: 0.3px;
+    font-size: 18px;
 }
 
 .registration {
+    padding: 0 7px;
+    border-radius: 3px;
     float: left;
-    width: 500px;
+    margin: 0 0 11px 11px;
     background-color: #103d62;
+}
+
+.registration_form {
+    float: left;
+}
+
+.icon_author {
+    margin-top: 4px;
+    display: block;
+    float: left;
 }
 
 .input_text {
     float: left;
     margin: 4px;
-    width: 115px;
+    width: 106px;
+    font-size: 11px;
+    padding-left: 3px;
+}
+
+.signin {
+    float: left;
+    margin: 6px 0px 0px 1px;
+    font-size: 11px;
 }
 
 .enter, .registr {
     color: white;
-    margin: 0 3px 0 3px;
+    margin: 0 8px 0 3px;
     text-decoration: none;
 }
 
@@ -70,18 +105,20 @@ ul > li {
 
 .enter:after {
     position: absolute;
-    right: -5px;
-    top: 3px;
+    right: -8px;
+    top: 2px;
     float: left;
     content: "";
     display: block;
     width: 1px;
-    height: 12px;
+    height: 10px;
     background-color: white;
 }
 
 .forgot_password {
     color: #bfbfbf;
+    margin-left: 13px;
+    letter-spacing: 1.1px;
 }
 
 .nav_icons {
@@ -89,13 +126,13 @@ ul > li {
     float: left;
     width: 80px;
     height: 25px;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 17px;
     background: url("../img/small_nav_background.png") no-repeat;
 }
 
 .nav_icon {
     position: absolute;
-    top: 6px;
+    top: 5px;
 }
 
 .icon_home {
@@ -103,12 +140,12 @@ ul > li {
 }
 
 .icon_map {
-    left: 32px;
+    left: 30px;
 }
 
 .icon_letter {
-    top: 7px;
-    left: 56px;
+    top: 6px;
+    left: 53px;
 }
 
 .nav_bar {
