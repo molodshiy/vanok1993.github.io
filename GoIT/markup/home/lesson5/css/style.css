@@ -144,32 +144,26 @@ header {
     float: left;
 }
 
-.separator:before {
-    position: absolute;
-    content: " ";
-    display: block;
-    border-bottom: 1px solid black;
-    border-top: 1px solid #9D9595;
-    width: 44%;
-    top: 40%;
-    left: 0;
-}
-
 .separator {
-    text-align: center;
-    position: relative;
+    display: flex;
+    align-items: center;
     margin-top: 32px;
 }
 
-.separator:after {
-    position: absolute;
+.separator:after,
+.separator:before {
+    flex-grow: 1;
     content: " ";
     display: block;
     border-bottom: 1px solid black;
     border-top: 1px solid #9D9595;
-    width: 44%;
-    top: 40%;
-    right: 0;
+}
+
+.separator:before {
+    margin-right: 6px;
+}
+.separator:after {
+    margin-left: 6px;
 }
 
 .info_text {
