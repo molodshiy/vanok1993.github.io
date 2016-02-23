@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+        body{
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 50px;
+        }
+        button{
+            min-width: 85px;
+            font-size: 24px;
+            background: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .container{
+            position: absolute;
+            left: 50%;
+            min-width: 300px;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="timer">00:00:00:0</div>
+    <button id="startButton">start</button>
+    <button id="resetButton">clear</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -23,6 +23,7 @@ ul > li {
     content: "";
     display: block;
     clear: both;
+    height: 0;
 }
 
 .container {
@@ -33,10 +34,10 @@ ul > li {
 
 .phone_numbers {
     float: left;
-    margin: 4px 0px 0 7px;
+    margin: 4px 0 0 7px;
 }
 
-.icon_phone {
+.icon_phone_bg {
     width: 21px;
     height: 21px;
     float: left;
@@ -45,7 +46,7 @@ ul > li {
     border-radius: 21px;
 }
 
-.icon_phone img {
+.icon_phone {
     position: absolute;
     top: 1px;
     left: 4px;
@@ -89,7 +90,7 @@ ul > li {
 
 .signin {
     float: left;
-    margin: 6px 0px 0px 1px;
+    margin: 6px 0 0 1px;
     font-size: 11px;
 }
 
@@ -119,6 +120,10 @@ ul > li {
     color: #bfbfbf;
     margin-left: 13px;
     letter-spacing: 1.1px;
+}
+
+.content img {
+    vertical-align: bottom;
 }
 
 .nav_icons {
@@ -152,24 +157,94 @@ ul > li {
     height: 34px;
     color: white;
     background-color: #202326;
+    border-radius: 4px;
+    margin-top: 6px;
 }
 
 .menu {
+    margin-left: 132px;
     display: inline-block;
-    line-height: 34px;
+    line-height: 33px;
 }
 
 .menu li {
     display: inline-block;
     list-style: none;
     text-transform: uppercase;
-    padding: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 17px;
+    padding: 6px 14px 5px 14px;
+}
+
+.menu li a:hover {
+    background-color: #13486b;
 }
 
 .shop_account {
+    position: relative;
+    width: 220px;
     color: white;
     display: inline-block;
+    margin-left: 53px;
+    font-size: 11px;
 }
+
+.shop_account p {
+    position: absolute;
+    top: 2px;
+    left: 28px;
+    letter-spacing: 0.2px;
+}
+
+.products_count_number, .summ {
+    display: inline-block;
+    width: 18px;
+    font-size: 12px;
+}
+
+.products_count_number {
+    width: 18px;
+}
+
+.summ {
+    width: 64px;
+    text-align: right;
+}
+
+.products {
+    margin-top: 162px;
+}
+
+.icon_catalog {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+
+.products h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid grey;
+    border-radius: 15px;
+    height: 25px;
+    margin-top: 2px;
+    width: 152px;
+    padding-left: 26px;
+    line-height: 28px;
+}
+
+.icon_phone_bg_catalog {
+    margin: 5px 3px;
+}
+
+
+
+
 
 .search_car {
     width: 412px;
@@ -220,6 +295,7 @@ h5 {
 }
 
 .goods {
+    background-color: grey;
     width: 520px;
     float: left;
 }
