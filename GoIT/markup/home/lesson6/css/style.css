@@ -230,7 +230,7 @@ ul > li {
 
 .catalog_right {
     margin-left: 14px;
-    width: 180px;
+    width: 178px;
 }
 
 .icon_catalog {
@@ -353,6 +353,7 @@ ul > li {
 
 h3 {
     color: #154468;
+
 }
 
 select {
@@ -374,6 +375,8 @@ select {
 h4 {
     font-weight: bold;
     color: #154468;
+    line-height: 14px;
+    font-size: 15px;
 }
 
 h5 {
@@ -389,18 +392,38 @@ h5 {
 }
 
 .goods {
-    background-color: grey;
-    width: 520px;
+    background-color: #bbc6cb;
+    width: 526px;
     float: left;
+    padding-top: 14px;
 }
 
 .tires li {
     float: left;
+    margin: 0px 8px 20px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.price {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 25px;
+    color: #114165;
 }
 
 .partners {
     text-align: center;
+    line-height: 61px;
+    height: 90px;
 }
+
+.partners img {
+    padding: 0 10px 0 0;
+}
+
 
 footer {
     background-color: #213a4d;
