@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Lesson6</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <header class="clearfix">
         <div class="phone_numbers clearfix">
-            <div class="icon_phone_bg"><img class="icon_phone" src="img/icons/icon_phone.png"></div>
+            <div class="icon_bg"><img class="icon_phone" src="img/icons/icon_phone.png"></div>
             <span class="number">(044)123-45-67</span>
             <span class="number">(044)567-89-10</span>
         </div>
@@ -60,29 +61,52 @@
         </div>
 
         <div class="products clearfix">
-            <div class="catalog">
-                <div class="icon_phone_bg icon_phone_bg_catalog"><img class="icon_catalog" src="img/icons/icon_catalog.png"></div>
-                <h3>Каталог продукции:</h3>
-                <h3>Шины</h3>
+            <div class="catalog catalog_left">
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products">
+                        <img class="icon_catalog" src="img/icons/icon_catalog.png">
+                    </div>
+                    <h3 class="h3_big">Каталог продукции:</h3>
+                </div>
+
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products_small">
+                        <div class="icon_point"></div>
+                    </div>
+                    <h3 class="h3_medium">Шины</h3>
+                </div>
+
                 <ul class="catalog_tires_name">
-                    <li>Наименование 1</li>
-                    <li>Наименование 2</li>
-                    <li>Наименование 3</li>
-                    <li>Наименование 4</li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 1</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 2</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 3</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 4</a></li>
                 </ul>
-                <h3>Диски:</h3>
-                <ul class="catalog_disks_name">
-                    <li>Наименование 1</li>
-                    <li>Наименование 2</li>
-                    <li>Наименование 3</li>
-                    <li>Наименование 4</li>
-                </ul>
-                <h3>Болты:</h3>
+
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products_small">
+                        <div class="icon_point"></div>
+                    </div>
+                    <h3 class="h3_medium">Диски:</h3>
+                </div>
                 <ul class="catalog_tires_name">
-                    <li>Наименование 1</li>
-                    <li>Наименование 2</li>
-                    <li>Наименование 3</li>
-                    <li>Наименование 4</li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 1</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 2</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 3</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 4</a></li>
+                </ul>
+
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products_small">
+                        <div class="icon_point"></div>
+                    </div>
+                    <h3 class="h3_medium">Болты:</h3>
+                </div>
+                <ul class="catalog_tires_name">
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 1</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 2</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 3</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 4</a></li>
                 </ul>
             </div>
 
@@ -169,23 +193,42 @@
                 </ul>
             </div>
 
-            <div class="brands">
-                <h3>Бренды:</h3>
+            <div class="catalog catalog_right">
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products">
+                        <img class="icon_catalog" src="img/icons/icon_catalog.png">
+                    </div>
+                    <h3 class="h3_big">Бренды:</h3>
+                </div>
 
-                <h3>Шины</h3>
-                <ul class="catalog_tires_brand">
-                    <li>Бренд 1</li>
-                    <li>Бренд 2</li>
-                    <li>Бренд 3</li>
-                </ul>
-                <h3>Диски:</h3>
-                <ul class="catalog_disks_brand">
-                    <li>Бренд 1</li>
-                    <li>Бренд 2</li>
-                    <li>Бренд 3</li>
-                </ul>
-                <h3>Болты:</h3>
-                <input type="button" value="Выбрать">
+                <div class="brands">
+                    <div class="clearfix">
+                        <div class="icon_bg icon_bg_products_small">
+                            <div class="icon_point"></div>
+                        </div>
+                        <h3 class="h3_small">Шины</h3>
+                    </div>
+
+                    <form>
+                        <ul class="catalog_tires_name catalog_tires_name_right">
+                            <li><input class="brands_checkbox" type="checkbox" id="brand1"> <label class="brands_label" for="brand1">Бренд 1</label></li>
+                            <li><input type="checkbox" id="brand2"> <label for="brand2">Бренд 2</label></li>
+                            <li><input type="checkbox" id="brand3"> <label for="brand3">Бренд 3</label></li>
+                        </ul>
+                        <div class="clearfix">
+                            <div class="icon_bg icon_bg_products_small">
+                                <div class="icon_point"></div>
+                            </div>
+                            <h3 class="h3_small">Диски:</h3>
+                        </div>
+                        <ul class="catalog_tires_name catalog_tires_name_right">
+                            <li><input type="checkbox" id="brand4"> <label for="brand4">Бренд 1</label></li>
+                            <li><input type="checkbox" id="brand5"> <label for="brand5">Бренд 2</label></li>
+                            <li><input type="checkbox" id="brand6"> <label for="brand6">Бренд 3</label></li>
+                        </ul>
+                        <input type="button" class="bn_check" value="Выбрать">
+                    </form>
+                </div>
             </div>
         </div>
 

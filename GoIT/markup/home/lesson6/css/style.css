@@ -37,7 +37,7 @@ ul > li {
     margin: 4px 0 0 7px;
 }
 
-.icon_phone_bg {
+.icon_bg {
     width: 21px;
     height: 21px;
     float: left;
@@ -220,6 +220,19 @@ ul > li {
     margin-top: 162px;
 }
 
+.catalog {
+    float: left;
+}
+
+.catalog_left {
+    width: 192px;
+}
+
+.catalog_right {
+    margin-left: 14px;
+    width: 180px;
+}
+
 .icon_catalog {
     position: absolute;
     top: 3px;
@@ -233,18 +246,104 @@ ul > li {
     border-radius: 15px;
     height: 25px;
     margin-top: 2px;
-    width: 152px;
     padding-left: 26px;
     line-height: 28px;
 }
 
-.icon_phone_bg_catalog {
-    margin: 5px 3px;
+.h3_big {
+    width: 154px;
+    margin-bottom: 14px;
 }
 
+.icon_bg_products {
+    margin: 3px;
+}
 
+.h3_medium {
+    width: 124px;
+}
 
+.h3_small {
+    width: 110px;
+}
 
+.icon_bg_products_small {
+    margin: 3px 3px 3px 7px;
+}
+
+.icon_point {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    display: block;
+    width: 12px;
+    height: 11px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.catalog_tires_name {
+    font-size: 13px;
+}
+
+.catalog_tires_name_right {
+    margin-bottom: 8px;
+}
+
+.catalog_left ul li {
+    margin-left: 46px;
+    line-height: 25px;
+}
+
+.catalog_right ul li {
+    margin-left: 15px;
+    line-height: 26px;
+}
+
+.catalog ul li a {
+    position: relative;
+    color: #8f9a9f;
+    text-decoration: none;
+}
+
+.catalog ul li a:hover {
+    font-size: 14px;
+    color: #114165;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.catalog ul li a i {
+    position: absolute;
+    left: -11px;
+    font-size: 8px;
+    line-height: 24px;
+}
+
+.brands {
+    margin-left: 18px;
+}
+
+.brands_checkbox {
+
+}
+
+.brands_label {
+
+}
+
+.bn_check {
+    margin: 8px 0 0 7px;
+    width: 81px;
+    height: 27px;
+    background-color: #085494;
+    border-radius: 18px;
+    border: white;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
+}
 
 .search_car {
     width: 412px;
@@ -289,11 +388,6 @@ h5 {
     margin-right: 48px;
 }
 
-.catalog {
-    width: 192px;
-    float: left;
-}
-
 .goods {
     background-color: grey;
     width: 520px;
@@ -301,11 +395,6 @@ h5 {
 }
 
 .tires li {
-    float: left;
-}
-
-.brands {
-    width: 192px;
     float: left;
 }
 
@@ -329,3 +418,15 @@ footer ul li {
 footer p {
     color: #7f4740;
 }
+
+/*.catalog ul li: before  {*/
+/*content: '';*/
+/*display: block;*/
+/*position: absolute;*/
+/*right: 10px;*/
+/*border: 2px solid #8f9a9f;*/
+/*border-radius: 50%;*/
+/*width: 10px;*/
+/*height: 10px;*/
+
+/*}*/
