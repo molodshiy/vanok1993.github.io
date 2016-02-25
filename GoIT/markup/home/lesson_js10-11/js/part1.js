@@ -16,6 +16,7 @@ function pow(number, power) {
         --power;
     }
 
+
     return numberInPow;
 }
 
