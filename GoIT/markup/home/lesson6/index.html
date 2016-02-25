@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <title>Lesson6</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-    <header>
+    <header class="clearfix">
         <div class="phone_numbers clearfix">
-            <div class="icon_phone"><img src="img/icons/icon_phone.png"></div>
+            <div class="icon_bg"><img class="icon_phone" src="img/icons/icon_phone.png"></div>
             <span class="number">(044)123-45-67</span>
             <span class="number">(044)567-89-10</span>
         </div>
 
         <div class="registration clearfix">
             <img class="icon_author" src="img/icons/icon_author.png">
+
             <form class="registration_form clearfix">
                 <input type="text" class="input_text" placeholder="логин">
                 <input type="text" class="input_text" placeholder="пароль">
             </form>
-            <div class="signin">
+            <div class="signin clearfix">
                 <a href="#" class="enter">вход</a>
                 <a href="#" class="registr">регистрация</a>
                 <a href="#" class="forgot_password">забили пароль?</a>
@@ -33,115 +35,78 @@
             <a href="#"><img src="img/icons/icon_letter.png" class="nav_icon icon_letter" alt=""/></a>
         </div>
     </header>
-    <content>
+    <div class="content clearfix">
         <img src="img/main_img.png" alt="">
 
         <div class="nav_bar">
             <ul class="menu">
-                <li>О компании</li>
-                <li>Оплата</li>
-                <li>Доставка</li>
-                <li>Статьи</li>
-                <li>Контакты</li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
             <div class="shop_account clearfix">
-                <p class="clearfix">товаров: <span class="products_count">0</span> на сумму: <span
-                        class="summ">0,00грн.</span></p>
+                <img src="img/icons/cart.png">
+
+                <p class="clearfix">
+                    <span class="products_count">
+                    товаров: <span class="products_count_number">0</span>
+                    </span>
+                    <span class="products_summ">
+                    на сумму: <span class="summ">0,00грн.</span>
+                    </span>
+                </p>
             </div>
-        </div>
-
-        <div class="search_car">
-            <h3>Поиск по автомобилю</h3>
-
-            <div class="disks">
-                <h4>Диски:</h4>
-                <h5>Марка <span class="text_info">авто:</span></h5>
-                <select>
-                    <option></option>
-                    <option>BMW</option>
-                    <option>Audi</option>
-                </select>
-
-                <h5>Модель <span class="text_info">автомобиля:</span></h5>
-                <select>
-                    <option></option>
-                    <option>100</option>
-                    <option>120</option>
-                </select>
-
-                <h5>Год выпуска <span class="text_info">автомобиля:</span></h5>
-                <select class="year_prod">
-                    <option></option>
-                    <option>2010</option>
-                    <option>2012</option>
-                </select>
-
-                <h5>Комплектация:</h5>
-                <select>
-                    <option></option>
-                    <option>2x2</option>
-                    <option>4x4</option>
-                </select>
-            </div>
-
-            <div class="tires">
-                <h4>Шины:</h4>
-                <h5>Марка <span>авто:</span></h5>
-                <select>
-                    <option></option>
-                    <option>BMW</option>
-                    <option>Audi</option>
-                </select>
-
-                <h5>Модель <span class="text_info">автомобиля:</span></h5>
-                <select>
-                    <option></option>
-                    <option>100</option>
-                    <option>120</option>
-                </select>
-
-                <h5>Год выпуска <span class="text_info">автомобиля:</span></h5>
-                <select class="year_prod">
-                    <option></option>
-                    <option>2010</option>
-                    <option>2012</option>
-                </select>
-
-                <h5>Комплектация:</h5>
-                <select>
-                    <option></option>
-                    <option>2x2</option>
-                    <option>4x4</option>
-                </select>
-            </div>
-
-            <a href="#" class="short_search">поиск...</a>
         </div>
 
         <div class="products clearfix">
-            <div class="catalog">
-                <h3>Каталог продукции:</h3>
+            <div class="catalog catalog_left">
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products">
+                        <img class="icon_catalog" src="img/icons/icon_catalog.png">
+                    </div>
+                    <h3 class="h3_big">Каталог продукции:</h3>
+                </div>
 
-                <h3>Шины</h3>
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products_small">
+                        <div class="icon_point"></div>
+                    </div>
+                    <h3 class="h3_medium">Шины</h3>
+                </div>
+
                 <ul class="catalog_tires_name">
-                    <li>Наименование 1</li>
-                    <li>Наименование 2</li>
-                    <li>Наименование 3</li>
-                    <li>Наименование 4</li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 1</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 2</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 3</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 4</a></li>
                 </ul>
-                <h3>Диски:</h3>
-                <ul class="catalog_disks_name">
-                    <li>Наименование 1</li>
-                    <li>Наименование 2</li>
-                    <li>Наименование 3</li>
-                    <li>Наименование 4</li>
-                </ul>
-                <h3>Болты:</h3>
+
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products_small">
+                        <div class="icon_point"></div>
+                    </div>
+                    <h3 class="h3_medium">Диски:</h3>
+                </div>
                 <ul class="catalog_tires_name">
-                    <li>Наименование 1</li>
-                    <li>Наименование 2</li>
-                    <li>Наименование 3</li>
-                    <li>Наименование 4</li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 1</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 2</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 3</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 4</a></li>
+                </ul>
+
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products_small">
+                        <div class="icon_point"></div>
+                    </div>
+                    <h3 class="h3_medium">Болты:</h3>
+                </div>
+                <ul class="catalog_tires_name">
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 1</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 2</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 3</a></li>
+                    <li><a href="#"><i class="icon-circle-empty"></i>Наименование 4</a></li>
                 </ul>
             </div>
 
@@ -153,7 +118,7 @@
                         <p>Ultra Grip Extreme</p>
                         <img src="img/tires/Tire1.png">
 
-                        <p>90.00 грн.</p>
+                        <p class="price">90.00 грн.</p>
                     </li>
                     <li>
                         <h4>Nokian</h4>
@@ -161,7 +126,7 @@
                         <p>Hakkapeliitta R</p>
                         <img src="img/tires/Tire2.png">
 
-                        <p>115.00 грн.</p>
+                        <p class="price">115.00 грн.</p>
                     </li>
                     <li>
                         <h4>Hankook</h4>
@@ -169,7 +134,7 @@
                         <p>K 708 155/65 R14</p>
                         <img src="img/tires/Tire3.png">
 
-                        <p>393.00 грн.</p>
+                        <p class="price">393.00 грн.</p>
                     </li>
                 </ul>
 
@@ -180,7 +145,7 @@
                         <p>Ultra Grip Extreme</p>
                         <img src="img/tires/Tire1.png">
 
-                        <p>90.00 грн.</p>
+                        <p class="price">90.00 грн.</p>
                     </li>
                     <li>
                         <h4>Nokian</h4>
@@ -188,7 +153,7 @@
                         <p>Hakkapeliitta R</p>
                         <img src="img/tires/Tire2.png">
 
-                        <p>115.00 грн.</p>
+                        <p class="price">115.00 грн.</p>
                     </li>
                     <li>
                         <h4>Hankook</h4>
@@ -196,7 +161,7 @@
                         <p>K 708 155/65 R14</p>
                         <img src="img/tires/Tire3.png">
 
-                        <p>393.00 грн.</p>
+                        <p class="price">393.00 грн.</p>
                     </li>
                 </ul>
 
@@ -207,7 +172,7 @@
                         <p>Ultra Grip Extreme</p>
                         <img src="img/tires/Tire1.png">
 
-                        <p>90.00 грн.</p>
+                        <p class="price">90.00 грн.</p>
                     </li>
                     <li>
                         <h4>Nokian</h4>
@@ -215,7 +180,7 @@
                         <p>Hakkapeliitta R</p>
                         <img src="img/tires/Tire2.png">
 
-                        <p>115.00 грн.</p>
+                        <p class="price">115.00 грн.</p>
                     </li>
                     <li>
                         <h4>Hankook</h4>
@@ -223,28 +188,47 @@
                         <p>K 708 155/65 R14</p>
                         <img src="img/tires/Tire3.png">
 
-                        <p>393.00 грн.</p>
+                        <p class="price">393.00 грн.</p>
                     </li>
                 </ul>
             </div>
 
-            <div class="brands">
-                <h3>Бренды:</h3>
+            <div class="catalog catalog_right">
+                <div class="clearfix">
+                    <div class="icon_bg icon_bg_products">
+                        <img class="icon_catalog" src="img/icons/icon_catalog.png">
+                    </div>
+                    <h3 class="h3_big">Бренды:</h3>
+                </div>
 
-                <h3>Шины</h3>
-                <ul class="catalog_tires_brand">
-                    <li>Бренд 1</li>
-                    <li>Бренд 2</li>
-                    <li>Бренд 3</li>
-                </ul>
-                <h3>Диски:</h3>
-                <ul class="catalog_disks_brand">
-                    <li>Бренд 1</li>
-                    <li>Бренд 2</li>
-                    <li>Бренд 3</li>
-                </ul>
-                <h3>Болты:</h3>
-                <input type="button" value="Выбрать">
+                <div class="brands">
+                    <div class="clearfix">
+                        <div class="icon_bg icon_bg_products_small">
+                            <div class="icon_point"></div>
+                        </div>
+                        <h3 class="h3_small">Шины</h3>
+                    </div>
+
+                    <form>
+                        <ul class="catalog_tires_name catalog_tires_name_right">
+                            <li><input class="brands_checkbox" type="checkbox" id="brand1"> <label class="brands_label" for="brand1">Бренд 1</label></li>
+                            <li><input type="checkbox" id="brand2"> <label for="brand2">Бренд 2</label></li>
+                            <li><input type="checkbox" id="brand3"> <label for="brand3">Бренд 3</label></li>
+                        </ul>
+                        <div class="clearfix">
+                            <div class="icon_bg icon_bg_products_small">
+                                <div class="icon_point"></div>
+                            </div>
+                            <h3 class="h3_small">Диски:</h3>
+                        </div>
+                        <ul class="catalog_tires_name catalog_tires_name_right">
+                            <li><input type="checkbox" id="brand4"> <label for="brand4">Бренд 1</label></li>
+                            <li><input type="checkbox" id="brand5"> <label for="brand5">Бренд 2</label></li>
+                            <li><input type="checkbox" id="brand6"> <label for="brand6">Бренд 3</label></li>
+                        </ul>
+                        <input type="button" class="bn_check" value="Выбрать">
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -258,13 +242,13 @@
             <img src="img/partner_logos/partner_logo7.png">
             <img src="img/partner_logos/partner_logo8.png">
         </div>
-    </content>
+    </div>
 
     <footer>
         <ul class="footer_menu">
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Статьи</a></li>
+            <li class="vr_separator"><a href="#">О компании</a></li>
+            <li class="vr_separator"><a href="#">Доставка</a></li>
+            <li class="vr_separator"><a href="#">Статьи</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
         <p>Создание сайта © Global Vision</p>
@@ -272,3 +256,71 @@
 </div>
 </body>
 </html>
+
+<!--<div class="search_car">
+    <h3>Поиск по автомобилю</h3>
+
+    <div class="disks">
+        <h4>Диски:</h4>
+        <h5>Марка <span class="text_info">авто:</span></h5>
+        <select>
+            <option></option>
+            <option>BMW</option>
+            <option>Audi</option>
+        </select>
+
+        <h5>Модель <span class="text_info">автомобиля:</span></h5>
+        <select>
+            <option></option>
+            <option>100</option>
+            <option>120</option>
+        </select>
+
+        <h5>Год выпуска <span class="text_info">автомобиля:</span></h5>
+        <select class="year_prod">
+            <option></option>
+            <option>2010</option>
+            <option>2012</option>
+        </select>
+
+        <h5>Комплектация:</h5>
+        <select>
+            <option></option>
+            <option>2x2</option>
+            <option>4x4</option>
+        </select>
+    </div>
+
+    <div class="tires">
+        <h4>Шины:</h4>
+        <h5>Марка <span>авто:</span></h5>
+        <select>
+            <option></option>
+            <option>BMW</option>
+            <option>Audi</option>
+        </select>
+
+        <h5>Модель <span class="text_info">автомобиля:</span></h5>
+        <select>
+            <option></option>
+            <option>100</option>
+            <option>120</option>
+        </select>
+
+        <h5>Год выпуска <span class="text_info">автомобиля:</span></h5>
+        <select class="year_prod">
+            <option></option>
+            <option>2010</option>
+            <option>2012</option>
+        </select>
+
+        <h5>Комплектация:</h5>
+        <select>
+            <option></option>
+            <option>2x2</option>
+            <option>4x4</option>
+        </select>
+    </div>
+
+    <a href="#" class="short_search">поиск...</a>
+</div>-->

@@ -23,6 +23,7 @@ ul > li {
     content: "";
     display: block;
     clear: both;
+    height: 0;
 }
 
 .container {
@@ -33,10 +34,10 @@ ul > li {
 
 .phone_numbers {
     float: left;
-    margin: 4px 0px 0 7px;
+    margin: 4px 0 0 7px;
 }
 
-.icon_phone {
+.icon_bg {
     width: 21px;
     height: 21px;
     float: left;
@@ -45,7 +46,7 @@ ul > li {
     border-radius: 21px;
 }
 
-.icon_phone img {
+.icon_phone {
     position: absolute;
     top: 1px;
     left: 4px;
@@ -89,7 +90,7 @@ ul > li {
 
 .signin {
     float: left;
-    margin: 6px 0px 0px 1px;
+    margin: 6px 0 0 1px;
     font-size: 11px;
 }
 
@@ -119,6 +120,10 @@ ul > li {
     color: #bfbfbf;
     margin-left: 13px;
     letter-spacing: 1.1px;
+}
+
+.content img {
+    vertical-align: bottom;
 }
 
 .nav_icons {
@@ -152,23 +157,192 @@ ul > li {
     height: 34px;
     color: white;
     background-color: #202326;
+    border-radius: 4px;
+    margin-top: 6px;
 }
 
 .menu {
+    margin-left: 132px;
     display: inline-block;
-    line-height: 34px;
+    line-height: 33px;
 }
 
 .menu li {
     display: inline-block;
     list-style: none;
     text-transform: uppercase;
-    padding: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 17px;
+    padding: 6px 14px 5px 14px;
+}
+
+.menu li a:hover {
+    background-color: #13486b;
 }
 
 .shop_account {
+    position: relative;
+    width: 220px;
     color: white;
     display: inline-block;
+    margin-left: 53px;
+    font-size: 11px;
+}
+
+.shop_account p {
+    position: absolute;
+    top: 2px;
+    left: 28px;
+    letter-spacing: 0.2px;
+}
+
+.products_count_number, .summ {
+    display: inline-block;
+    width: 18px;
+    font-size: 12px;
+}
+
+.products_count_number {
+    width: 18px;
+}
+
+.summ {
+    width: 64px;
+    text-align: right;
+}
+
+.products {
+    margin-top: 162px;
+}
+
+.catalog {
+    float: left;
+}
+
+.catalog_left {
+    width: 192px;
+}
+
+.catalog_right {
+    margin-left: 14px;
+    width: 178px;
+}
+
+.icon_catalog {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+
+.products h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid grey;
+    border-radius: 15px;
+    height: 25px;
+    margin-top: 2px;
+    padding-left: 26px;
+    line-height: 28px;
+}
+
+.h3_big {
+    width: 154px;
+    margin-bottom: 14px;
+}
+
+.icon_bg_products {
+    margin: 3px;
+}
+
+.h3_medium {
+    width: 124px;
+}
+
+.h3_small {
+    width: 110px;
+}
+
+.icon_bg_products_small {
+    margin: 3px 3px 3px 7px;
+}
+
+.icon_point {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    display: block;
+    width: 12px;
+    height: 11px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.catalog_tires_name {
+    font-size: 13px;
+}
+
+.catalog_tires_name_right {
+    margin-bottom: 8px;
+}
+
+.catalog_left ul li {
+    margin-left: 46px;
+    line-height: 25px;
+}
+
+.catalog_right ul li {
+    margin-left: 15px;
+    line-height: 26px;
+}
+
+.catalog ul li a {
+    position: relative;
+    color: #8f9a9f;
+    text-decoration: none;
+}
+
+.catalog ul li a:hover {
+    font-size: 14px;
+    color: #114165;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.catalog ul li a i {
+    position: absolute;
+    left: -11px;
+    font-size: 8px;
+    line-height: 24px;
+}
+
+.brands {
+    margin-left: 18px;
+}
+
+.brands_checkbox {
+
+}
+
+.brands_label {
+
+}
+
+.bn_check {
+    margin: 8px 0 0 7px;
+    width: 81px;
+    height: 27px;
+    background-color: #085494;
+    border-radius: 18px;
+    border: white;
+    text-transform: uppercase;
+    color: white;
+    font-size: 11px;
 }
 
 .search_car {
@@ -179,6 +353,7 @@ ul > li {
 
 h3 {
     color: #154468;
+
 }
 
 select {
@@ -200,13 +375,17 @@ select {
 h4 {
     font-weight: bold;
     color: #154468;
+    line-height: 14px;
+    font-size: 15px;
 }
 
+/*
 h5 {
     font-size: 10px;
     display: inline-block;
     width: 75px;
 }
+*/
 
 .short_search {
     text-align: right;
@@ -214,34 +393,45 @@ h5 {
     margin-right: 48px;
 }
 
-.catalog {
-    width: 192px;
-    float: left;
-}
-
 .goods {
-    width: 520px;
+    background-color: #bbc6cb;
+    width: 526px;
     float: left;
+    padding: 14px 0 4px;
 }
 
 .tires li {
     float: left;
+    margin: 0 8px 20px 20px;
+    text-align: center;
+    font-size: 13px;
 }
 
-.brands {
-    width: 192px;
-    float: left;
+.price {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 25px;
+    color: #114165;
 }
 
 .partners {
     text-align: center;
+    line-height: 57px;
+    height: 90px;
 }
 
+.partners img {
+    padding: 0 10px 0 0;
+}
+
+
 footer {
+    height: 100px;
     background-color: #213a4d;
     color: white;
     text-align: center;
-    padding: 10px 0;
 }
 
 footer ul li {
@@ -252,4 +442,31 @@ footer ul li {
 
 footer p {
     color: #7f4740;
+    font-size: 10PX;
+    margin-top: 9px;
+}
+
+
+footer ul li a{
+    padding: 6px 5px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.vr_separator:after {
+    content: " ";
+    display: inline-block;
+    width: 2px;
+    height: 11px;
+    border-right: 1px solid #8d989f;
+    border-left: 1px solid #7a878f;
+    background: white;
+    box-sizing: border-box;
+    margin: 0 -5px -2px 12px;
+}
+
+footer ul li a:hover {
+    color: #4d9fbd;
 }
