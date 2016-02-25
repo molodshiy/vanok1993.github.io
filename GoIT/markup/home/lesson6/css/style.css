@@ -379,11 +379,13 @@ h4 {
     font-size: 15px;
 }
 
+/*
 h5 {
     font-size: 10px;
     display: inline-block;
     width: 75px;
 }
+*/
 
 .short_search {
     text-align: right;
@@ -395,12 +397,12 @@ h5 {
     background-color: #bbc6cb;
     width: 526px;
     float: left;
-    padding-top: 14px;
+    padding: 14px 0 4px;
 }
 
 .tires li {
     float: left;
-    margin: 0px 8px 20px 20px;
+    margin: 0 8px 20px 20px;
     text-align: center;
     font-size: 13px;
 }
@@ -416,7 +418,7 @@ h5 {
 
 .partners {
     text-align: center;
-    line-height: 61px;
+    line-height: 57px;
     height: 90px;
 }
 
@@ -426,10 +428,10 @@ h5 {
 
 
 footer {
+    height: 100px;
     background-color: #213a4d;
     color: white;
     text-align: center;
-    padding: 10px 0;
 }
 
 footer ul li {
@@ -440,16 +442,31 @@ footer ul li {
 
 footer p {
     color: #7f4740;
+    font-size: 10PX;
+    margin-top: 9px;
 }
 
-/*.catalog ul li: before  {*/
-/*content: '';*/
-/*display: block;*/
-/*position: absolute;*/
-/*right: 10px;*/
-/*border: 2px solid #8f9a9f;*/
-/*border-radius: 50%;*/
-/*width: 10px;*/
-/*height: 10px;*/
 
-/*}*/
+footer ul li a{
+    padding: 6px 5px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.vr_separator:after {
+    content: " ";
+    display: inline-block;
+    width: 2px;
+    height: 11px;
+    border-right: 1px solid #8d989f;
+    border-left: 1px solid #7a878f;
+    background: white;
+    box-sizing: border-box;
+    margin: 0 -5px -2px 12px;
+}
+
+footer ul li a:hover {
+    color: #4d9fbd;
+}
