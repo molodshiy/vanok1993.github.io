@@ -122,7 +122,7 @@ ul > li {
     margin: 0 15px;
 }
 
-.content img {
+header img {
     vertical-align: bottom;
 }
 
@@ -222,7 +222,7 @@ ul > li {
     text-align: right;
 }
 
-.products {
+.content {
     margin-top: 162px;
 }
 
@@ -245,7 +245,7 @@ ul > li {
     left: 4px;
 }
 
-.products h3 {
+.content h3 {
     font-size: 13px;
     text-transform: uppercase;
     border: 1px solid grey;
