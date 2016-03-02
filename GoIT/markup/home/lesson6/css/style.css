@@ -122,9 +122,13 @@ ul > li {
     margin: 0 15px;
 }
 
-header img {
+.content img {
     vertical-align: bottom;
 }
+
+header img {
+      vertical-align: bottom;
+  }
 
 .nav_icons {
     position: relative;
@@ -423,6 +427,7 @@ h5 {
 }
 
 .partners {
+    clear: both;
     text-align: center;
     line-height: 57px;
     height: 90px;
@@ -455,7 +460,7 @@ footer p {
 }
 
 footer ul li a {
-    padding: 6px 5px 0 0;
+    padding: 6px 12px 0 0;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -471,7 +476,6 @@ footer ul li a {
     border-left: 1px solid #7a878f;
     background: white;
     box-sizing: border-box;
-    margin: 0 -5px -2px 12px;
 }
 
 footer ul li a:hover {
