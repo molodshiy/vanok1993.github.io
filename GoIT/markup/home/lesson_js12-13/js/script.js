@@ -77,6 +77,7 @@ function createButton(){
     submit.setAttribute("type", "submit");
     submit.innerHTML = "Проверить мои результаты";
     submit.className = "bt_submit";
+    return submit;
 }
 
 function addElements(parrent, child) {
