@@ -1,0 +1,7 @@
+.button_hide {
+    display: none;
+}
+
+.button_show {
+    display: inline-block;
+}
