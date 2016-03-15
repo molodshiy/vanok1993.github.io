@@ -1,7 +1,8 @@
-.button_hide {
-    display: none;
+body {
+    text-align: center;
 }
 
-.button_show {
-    display: inline-block;
+.btn-start {
+    width: 200px;
 }
+
