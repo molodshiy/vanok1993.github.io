@@ -19,7 +19,7 @@ function handlerStart() {
 
 function handlerPause() {
     clearInterval(interval);
-    changeFirstButton("Cont", handlerPause, handlerCont);
+    changeFirstButton("Continue", handlerPause, handlerCont);
 }
 
 function handlerCont() {
@@ -30,6 +30,7 @@ function handlerCont() {
 function handlerStop() {
     clearInterval(interval);
     time.innerHTML = "00 : 00 : 000";
+    changeFirstButton.apply("Start", [handlerPause, handlerCont]);
     (time.firstChild.nodeValue == "Pause") ? (changeFirstButton("Start", handlerPause, handlerStart)) : (changeFirstButton("Start", handlerCont, handlerStart));
 }
 
