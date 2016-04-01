@@ -27,6 +27,7 @@ label {
     border: 2px solid blue;
 }
 
-.ui-tooltip {
-    width: 400px;
+.title {
+    display: inline-block;
+    margin-left: 10px;
 }
