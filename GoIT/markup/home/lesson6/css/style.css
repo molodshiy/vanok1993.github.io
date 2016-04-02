@@ -58,7 +58,6 @@ ul > li {
     margin: 0 6px;
     font-weight: bold;
     color: #5e696d;
-    letter-spacing: 0.3px;
     font-size: 18px;
 }
 
@@ -66,8 +65,10 @@ ul > li {
     padding: 0 7px;
     border-radius: 3px;
     float: left;
-    margin: 0 0 11px 11px;
+    margin: 0 0 9px 19px;
     background-color: #103d62;
+    border: 1px solid #a6c3cf;
+    border-bottom: 1px solid #596d80;
 }
 
 .registration_form {
@@ -118,20 +119,23 @@ ul > li {
 
 .forgot_password {
     color: #bfbfbf;
-    margin-left: 13px;
-    letter-spacing: 1.1px;
+    margin: 0 15px;
 }
 
 .content img {
     vertical-align: bottom;
 }
 
+header img {
+      vertical-align: bottom;
+  }
+
 .nav_icons {
     position: relative;
     float: left;
     width: 80px;
     height: 25px;
-    margin: 0 0 0 17px;
+    margin-left: 15px;
     background: url("../img/small_nav_background.png") no-repeat;
 }
 
@@ -156,15 +160,16 @@ ul > li {
 .nav_bar {
     height: 34px;
     color: white;
-    background-color: #202326;
     border-radius: 4px;
     margin-top: 6px;
+    border: 1px solid #2c345a;
+    box-sizing: border-box;
 }
 
 .menu {
     margin-left: 132px;
     display: inline-block;
-    line-height: 33px;
+    line-height: 32px;
 }
 
 .menu li {
@@ -174,7 +179,7 @@ ul > li {
 }
 
 .menu li a {
-    color: white;
+    color: #b1bcc0;
     text-decoration: none;
     font-size: 13px;
     border-radius: 17px;
@@ -182,6 +187,7 @@ ul > li {
 }
 
 .menu li a:hover {
+    color: white;
     background-color: #13486b;
 }
 
@@ -198,17 +204,21 @@ ul > li {
     position: absolute;
     top: 2px;
     left: 28px;
-    letter-spacing: 0.2px;
 }
 
 .products_count_number, .summ {
     display: inline-block;
     width: 18px;
     font-size: 12px;
+    color: #0d5a8f;
 }
 
 .products_count_number {
     width: 18px;
+}
+
+.products_count, .products_summ {
+    color: #b1bcc0;
 }
 
 .summ {
@@ -216,7 +226,7 @@ ul > li {
     text-align: right;
 }
 
-.products {
+.content {
     margin-top: 162px;
 }
 
@@ -229,7 +239,7 @@ ul > li {
 }
 
 .catalog_right {
-    margin-left: 14px;
+    margin-left: 8px;
     width: 178px;
 }
 
@@ -239,7 +249,7 @@ ul > li {
     left: 4px;
 }
 
-.products h3 {
+.content h3 {
     font-size: 13px;
     text-transform: uppercase;
     border: 1px solid grey;
@@ -296,7 +306,7 @@ ul > li {
 }
 
 .catalog_right ul li {
-    margin-left: 15px;
+    margin-left: 18px;
     line-height: 26px;
 }
 
@@ -322,7 +332,7 @@ ul > li {
 }
 
 .brands {
-    margin-left: 18px;
+    margin-left: 14px;
 }
 
 .brands_checkbox {
@@ -334,7 +344,7 @@ ul > li {
 }
 
 .bn_check {
-    margin: 8px 0 0 7px;
+    margin: 8px 0 0 10px;
     width: 81px;
     height: 27px;
     background-color: #085494;
@@ -394,10 +404,10 @@ h5 {
 }
 
 .goods {
-    background-color: #bbc6cb;
     width: 526px;
     float: left;
     padding: 14px 0 4px;
+    border-radius: 3px;
 }
 
 .tires li {
@@ -417,6 +427,7 @@ h5 {
 }
 
 .partners {
+    clear: both;
     text-align: center;
     line-height: 57px;
     height: 90px;
@@ -426,12 +437,14 @@ h5 {
     padding: 0 10px 0 0;
 }
 
-
 footer {
     height: 100px;
     background-color: #213a4d;
     color: white;
     text-align: center;
+    border: 1px solid #242a3c;
+    border-bottom: none;
+    box-sizing: border-box;
 }
 
 footer ul li {
@@ -446,9 +459,8 @@ footer p {
     margin-top: 9px;
 }
 
-
-footer ul li a{
-    padding: 6px 5px 0 0;
+footer ul li a {
+    padding: 6px 12px 0 0;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -464,9 +476,62 @@ footer ul li a{
     border-left: 1px solid #7a878f;
     background: white;
     box-sizing: border-box;
-    margin: 0 -5px -2px 12px;
 }
 
 footer ul li a:hover {
     color: #4d9fbd;
+}
+
+.shadow {
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(181, 181, 181, 0.75);
+    -moz-box-shadow: 3px 3px 3px 0 rgba(181, 181, 181, 0.75);
+    box-shadow: 3px 3px 3px 0 rgba(181, 181, 181, 0.75);
+}
+
+.nav_bar_background {
+    background: rgba(0, 0, 0, 1);
+    /* Old Browsers */
+    background: -moz-linear-gradient(top, rgba(70, 77, 84, 1) 0%, rgba(70, 77, 84, 1) 9%, rgba(1, 1, 1, 1) 35%, rgba(1, 1, 1, 1) 98%, rgba(1, 1, 1, 1) 100%);
+    /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(70, 77, 84, 1) 0%, rgba(70, 77, 84, 1) 9%, rgba(1, 1, 1, 1) 35%, rgba(1, 1, 1, 1) 98%, rgba(1, 1, 1, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(70, 77, 84, 1) 0%, rgba(70, 77, 84, 1) 9%, rgba(1, 1, 1, 1) 35%, rgba(1, 1, 1, 1) 98%, rgba(1, 1, 1, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(70, 77, 84, 1) 0%, rgba(70, 77, 84, 1) 9%, rgba(1, 1, 1, 1) 35%, rgba(1, 1, 1, 1) 98%, rgba(1, 1, 1, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(to bottom, rgba(70, 77, 84, 1) 0%, rgba(70, 77, 84, 1) 9%, rgba(1, 1, 1, 1) 35%, rgba(1, 1, 1, 1) 98%, rgba(1, 1, 1, 1) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#464d54', endColorstr='#010101', GradientType=0);
+}
+
+.goods_background {
+    background: rgba(229, 231, 232, 1);
+    /* Old Browsers */
+    background: -moz-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(to bottom, rgba(229, 231, 232, 1) 0%, rgba(147, 167, 176, 1) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e7e8', endColorstr='#93a7b0', GradientType=0);
+}
+
+.registration_background {
+    background: rgba(31, 104, 135, 1);
+    /* Old Browsers */
+    background: -moz-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(to bottom, rgba(31, 104, 135, 1) 0%, rgba(12, 51, 87, 1) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f6887', endColorstr='#0c3357', GradientType=0);
 }
