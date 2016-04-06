@@ -31,3 +31,7 @@ label {
     display: inline-block;
     margin-left: 10px;
 }
+
+.title_hide {
+    display: none;
+}
