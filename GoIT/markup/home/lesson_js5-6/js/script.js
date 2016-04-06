@@ -7,6 +7,7 @@ var start = document.getElementById("start");
 var pause = document.getElementById("pause");
 var clear = document.getElementById("clear");
 var interval;
+var arrTime = [0, 0, 0];
 
 start.addEventListener('click', handlerStart);
 
@@ -44,10 +45,9 @@ function changeButton(innerHTML, pre, next) {
 }
 
 function write() {
-    var arrTime = time.firstChild.nodeValue.split(" : ");
-    var ms = parseInt(arrTime[2]);
-    var s = parseInt(arrTime[1]);
-    var m = parseInt(arrTime[0]);
+    var ms = +arrTime[2];
+    var s = +arrTime[1];
+    var m = +arrTime[0];
 
     ms += 5;
     if (ms >= 999) {
@@ -67,6 +67,20 @@ function write() {
         arrTime[2] = "0" + ms;
     } else {
         arrTime[2] = ms;
+    }
+
+    if(s < 10){
+        arrTime[1] = "0" +s;
+    } else {
+        arrTime[1] = +s;
+    }
+
+    if(m < 10){
+        arrTime[0] = "0" +m;
+    } else if (m >= 60){
+        arrTime = [0, 0, 0];
+    } else {
+        arrTime[0] = +m;
     }
 
     time.innerHTML = arrTime.join(" : ");
