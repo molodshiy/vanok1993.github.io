@@ -36,27 +36,27 @@ function createTest() {
     return test;
 }
 
-function createQuestions(test1, quests, variants) {
+function createQuestions(testForm, quests, variants) {
 
     for(var i = 1; i <= quests; i++){
 
         var h3 = document.createElement('h3');
         h3.innerHTML =+i +". Вопрос №" +i;
         h3.className = 'questions_title';
-        var li = document.createElement('li');
-        li.appendChild(h3);
+        var question = document.createElement('li');
+        question.appendChild(h3);
 
-        lis = createVariants(li, variants);
+        var listVariants = createVariants(question, variants);
 
-        test1.appendChild(lis);
+        testForm.appendChild(listVariants);
     }
 }
 
-function createVariants(lis, variants) {
+function createVariants(question, variants) {
     for (var j = 1; j <= variants; j++) {
 
-        var li2 = document.createElement('li');
-        li2.className = 'questions_item';
+        var variant = document.createElement('li');
+        variant.className = 'questions_item';
 
         var inputCheckbox = document.createElement('input');
         inputCheckbox.setAttribute("type", "checkbox");
@@ -64,12 +64,12 @@ function createVariants(lis, variants) {
         var spanText = document.createElement('span');
         spanText.innerHTML = " Вариант ответа №" + j;
 
-        li2.appendChild(inputCheckbox);
-        li2.appendChild(spanText);
-        lis.appendChild(li2);
+        variant.appendChild(inputCheckbox);
+        variant.appendChild(spanText);
+        question.appendChild(variant);
     }
 
-    return lis;
+    return question;
 }
 
 function createButton(){
