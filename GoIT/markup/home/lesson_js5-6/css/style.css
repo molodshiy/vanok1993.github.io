@@ -3,6 +3,10 @@ body {
 }
 
 .btn-start {
-    width: 200px;
-}
+     width: 150px;
+ }
+
+.btn-pause {
+     width: 100px;
+ }
 

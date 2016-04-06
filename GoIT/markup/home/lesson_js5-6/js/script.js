@@ -4,40 +4,43 @@
 
 var time = document.getElementById("time");
 var start = document.getElementById("start");
+var pause = document.getElementById("pause");
 var clear = document.getElementById("clear");
 var interval;
 
 start.addEventListener('click', handlerStart);
-clear.addEventListener('click', handlerStop);
 
 function handlerStart() {
     interval = setInterval(write, 5);
-    if (start.firstChild.nodeValue == "Start") {
-        changeFirstButton("Pause", handlerStart, handlerPause);
-    }
+
+    pause.addEventListener('click', handlerPause);
+    clear.addEventListener('click', handlerStop);
+    start.removeEventListener('click', handlerStart);
 }
 
 function handlerPause() {
     clearInterval(interval);
-    changeFirstButton("Continue", handlerPause, handlerCont);
+    changeButton("Continue", handlerPause, handlerCont);
 }
 
 function handlerCont() {
-    handlerStart();
-    changeFirstButton("Pause", handlerCont, handlerPause);
+    interval = setInterval(write, 5);
+    changeButton("Pause", handlerCont, handlerPause);
 }
 
 function handlerStop() {
     clearInterval(interval);
+    pause.innerHTML = "Pause";
+    pause.removeEventListener('click', handlerPause);
+    pause.removeEventListener('click', handlerCont);
     time.innerHTML = "00 : 00 : 000";
-    changeFirstButton.apply("Start", [handlerPause, handlerCont]);
-    (time.firstChild.nodeValue == "Pause") ? (changeFirstButton("Start", handlerPause, handlerStart)) : (changeFirstButton("Start", handlerCont, handlerStart));
+    start.addEventListener('click', handlerStart);
 }
 
-function changeFirstButton(innerHTML, pre, next) {
-    start.innerHTML = innerHTML;
-    start.removeEventListener('click', pre);
-    start.addEventListener('click', next);
+function changeButton(innerHTML, pre, next) {
+    pause.innerHTML = innerHTML;
+    pause.removeEventListener('click', pre);
+    pause.addEventListener('click', next);
 }
 
 function write() {
