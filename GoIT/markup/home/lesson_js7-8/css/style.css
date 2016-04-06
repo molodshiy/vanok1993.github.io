@@ -22,8 +22,8 @@ ul li {
     background-color: gold;
     border: 2px solid grey;
     text-align: center;
+    cursor: pointer;
 }
-
 
 div.t2,
 div.t3 {
