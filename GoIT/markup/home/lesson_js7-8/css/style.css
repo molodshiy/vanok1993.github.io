@@ -25,6 +25,10 @@ ul li {
     cursor: pointer;
 }
 
+div.t1 {
+    display: block;
+}
+
 div.t2,
 div.t3 {
     display: none;
