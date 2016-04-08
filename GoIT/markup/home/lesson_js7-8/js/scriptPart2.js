@@ -3,29 +3,34 @@
  */
 
 $(function(){
-    $("form").on('mouseenter', 'input', function() {
-        showTitle(this);
+
+    var form = $("form");
+    var span = null;
+
+    form.on('mouseenter', 'input', function() {
+        showTitle($(this));
+        span = $(this).parent().find('span');
     });
 
-    $("form").on('mouseleave', 'input', function(){
-        $(this).parent().find('span').removeClass('title');
-        $(this).parent().find('span').addClass('title_hide');
+    form.on('mouseleave', 'input', function(){
+        span.addClass('title_hide');
+        span.removeClass('title');
     });
 
     $('.btn_help').on('click', function(){
-        showTitle($('form').find('#firstName'));
-        showTitle($('form').find('#lastName'));
-        showTitle($('form').find('#Address'));
+        showTitle(form.find('input'));
     });
 });
 
 function showTitle (elem){
-    if(elem.parent().find('span') == false){
+    var span = elem.parent().find('span');
+    if((!span.hasClass('title')) && (!span.hasClass('title_hide'))){
         var textTitle = $(elem).data('title');
         var title = $('<span>'+textTitle+'</span>');
         title.addClass('title');
         $(elem).parent().append(title);
-    } else if (elem.parent().find('span') == true && (elem.parent().find('span').hasClass(''))){
-        $(elem).parent().find('span').addClass('title');
+    } else if ((span.hasClass('title_hide'))){
+        span.removeClass('title_hide');
+        span.addClass('title');
     }
 }
