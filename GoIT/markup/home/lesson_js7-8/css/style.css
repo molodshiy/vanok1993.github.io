@@ -25,14 +25,11 @@ ul li {
     cursor: pointer;
 }
 
-div.t1 {
-    display: block;
-}
-
 div.t2,
 div.t3 {
     display: none;
 }
+
 
 div.t1,
 div.t2,
@@ -43,4 +40,9 @@ div.t3 {
 
 .tab-current {
     border-bottom: 2px solid gold;
+    color: white;
+}
+
+.text-current {
+    display: block;
 }
