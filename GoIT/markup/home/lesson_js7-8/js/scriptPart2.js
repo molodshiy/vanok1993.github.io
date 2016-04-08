@@ -18,7 +18,9 @@ $(function(){
     });
 
     $('.btn_help').on('click', function(){
-        showTitle(form.find('input'));
+        showTitle(form.find('#firstName'));
+        showTitle(form.find('#lastName'));
+        showTitle(form.find('#Address'));
     });
 });
 
