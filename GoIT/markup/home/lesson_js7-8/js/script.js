@@ -5,19 +5,19 @@
 
 
 $(function() {
-    var tabs = $('ul.tabs li');
+    var $tabs = $('ul.tabs li');
 
-    tabs.click(function(){
-        var thisClass = $(this).attr('class').slice(0,2);
+    $tabs.on('click', function(){
+        var
+            $thisClass = $(this).attr('class').slice(0,2),
+            $pastText = $('.text-current'),
+            $currentText = $('div.' + $thisClass);
 
-        var pastText = $('.text-current');
-        var currentText = $('div.' + thisClass);
+        $pastText.hide();
+        $pastText.removeClass('text-current');
 
-        pastText.hide();
-        pastText.removeClass('text-current');
-
-        currentText.addClass('text-current');
-        currentText.show();
+        $currentText.addClass('text-current');
+        $currentText.show();
 
         $('.tab-current').removeClass('tab-current');
         $(this).addClass('tab-current');
