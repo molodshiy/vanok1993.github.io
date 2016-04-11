@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.connected-carousels.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.connected-carousels.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css"/>
+    <script type="text/javascript" src="js/js_selectbox/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="js/js_selectbox/jquery.selectbox-0.6.1.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Connected Carousels</h1>
+
+    <div class="connected-carousels">
+        <div class="stage">
+            <div class="carousel carousel-stage">
+                <ul>
+                    <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+                </ul>
+            </div>
+
+            <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+            <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+        </div>
+
+        <div class="navigation">
+            <a href="#" class="prev prev-navigation">&lsaquo;</a>
+            <a href="#" class="next next-navigation">&rsaquo;</a>
+
+            <div class="carousel carousel-navigation">
+                <ul>
+                    <li><img src="img/img1_thumb.jpg" width="50" height="50" alt=""></li>
+                    <li><img src="img/img2_thumb.jpg" width="50" height="50" alt=""></li>
+                    <li><img src="img/img3_thumb.jpg" width="50" height="50" alt=""></li>
+                    <li><img src="img/img4_thumb.jpg" width="50" height="50" alt=""></li>
+                    <li><img src="img/img5_thumb.jpg" width="50" height="50" alt=""></li>
+                    <li><img src="img/img6_thumb.jpg" width="50" height="50" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h1>SelectBox</h1>
+
+    <select id="default-usage-select">
+        <option value="--">Please select your favorite color</option>
+        <option value="01">Red</option>
+        <option value="02">Orange</option>
+        <option value="03">Yellow</option>
+        <option value="04">Green</option>
+        <option value="05">Blue</option>
+        <option value="06">Magenta</option>
+        <option value="07">Violet</option>
+        <option value="08">Ultra-violet</option>
+    </select>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        $("#default-usage-select").selectbox().bind('change', function () {
+            $('<div>Value of #default-usage-select changed to: ' + $(this).val() + '</div>').appendTo('#demo-default-usage .demoTarget').fadeOut(5000, function () {
+                $(this).remove();
+            });
+        });
+        //]]>
+    </script>
+
+    <h1>CheckboxBox</h1>
+
+    <span class="niceCheck"><input type="checkbox" name="ch1" /> ChackBox1</span>
+
+</div>
+
+</body>
+</html>
