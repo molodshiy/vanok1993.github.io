@@ -21,6 +21,7 @@
 </head>
 <body>
 <div class="wrapper">
+
     <h1>Connected Carousels</h1>
 
     <div class="connected-carousels">
@@ -59,31 +60,44 @@
 
     <h1>SelectBox</h1>
 
-    <select id="default-usage-select">
-        <option value="--">Please select your favorite color</option>
-        <option value="01">Red</option>
-        <option value="02">Orange</option>
-        <option value="03">Yellow</option>
-        <option value="04">Green</option>
-        <option value="05">Blue</option>
-        <option value="06">Magenta</option>
-        <option value="07">Violet</option>
-        <option value="08">Ultra-violet</option>
-    </select>
+    <form class="demoTarget">
+        <select id="default-usage-select">
+            <option value="--">Please select your favorite color</option>
+            <option value="01">Red</option>
+            <option value="02">Orange</option>
+            <option value="03">Yellow</option>
+            <option value="04">Green</option>
+            <option value="05">Blue</option>
+            <option value="06">Magenta</option>
+            <option value="07">Violet</option>
+            <option value="08">Ultra-violet</option>
+        </select>
 
-    <script type="text/javascript">
-        //<![CDATA[
-        $("#default-usage-select").selectbox().bind('change', function () {
-            $('<div>Value of #default-usage-select changed to: ' + $(this).val() + '</div>').appendTo('#demo-default-usage .demoTarget').fadeOut(5000, function () {
-                $(this).remove();
-            });
-        });
-        //]]>
-    </script>
+        <div class="clr"></div>
+    </form>
 
-    <h1>CheckboxBox</h1>
+    <h1>CheckboxBox CSS</h1>
 
-    <span class="niceCheck"><input type="checkbox" name="ch1" /> ChackBox1</span>
+    <form>
+        <input type="checkbox" id="check1" name="chb1"><label class="label1" for="check1">Чекбокс 1:</label>
+        <input type="checkbox" id="check2" name="chb2"><label class="label1" for="check2">Чекбокс 2:</label>
+        <input type="checkbox" id="check3" name="chb3"><label class="label1" for="check3">Чекбокс 3:</label>
+    </form>
+
+
+    <h1>CheckboxBox jQuery</h1>
+
+    <form>
+        <div><span class="niceCheck"><input type="checkbox" id="checkBox1" name="ch1"/><label class="label2"
+                                                                                              for="checkBox1">Чекбокс
+            1</label></span></div>
+        <div><span class="niceCheck"><input type="checkbox" id="checkBox2" name="ch1"/><label class="label2"
+                                                                                              for="checkBox2">Чекбокс
+            2</label></span></div>
+        <div><span class="niceCheck"><input type="checkbox" id="checkBox3" name="ch1"/><label class="label2"
+                                                                                              for="checkBox3">Чекбокс
+            3</label></span></div>
+    </form>
 
 </div>
 
