@@ -3,79 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
-    <link href="../lesson_js9-10/css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="jquery.color.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
 
 </head>
 <body>
-<nav>
-    <ul>
-        <li class="main_item"><a href="#">Main item 1</a>
-            <ul class="main_item_ul">
-                <li class="item_inner"><a href="#">Item №1</a></li>
-                <li class="item_inner"><a href="#">Item №2</a></li>
-                <li class="item_inner"><a href="#">Item №3</a></li>
-                <li class="item_inner"><a href="#">Item №4</a></li>
-                <li class="item_inner"><a href="#">Item №5</a></li>
-            </ul>
-        </li>
-        <li class="main_item"><a href="#">Main item 2</a>
-            <ul class="main_item_ul">
-                <li class="item_inner"><a href="#">Item №1</a></li>
-                <li class="item_inner"><a href="#">Item №2 =></a>
-                    <ul class="item_inner_ul">
-                        <li><a href="#">Item inner №1</a></li>
-                        <li><a href="#">Item inner №2</a></li>
-                        <li><a href="#">Item inner №3</a></li>
-                        <li><a href="#">Item inner №4</a></li>
-                        <li><a href="#">Item inner №5</a></li>
-                    </ul>
-                </li>
-                <li class="item_inner"><a href="#">Item №3</a></li>
-                <li class="item_inner"><a href="#">Item №4</a></li>
-                <li class="item_inner"><a href="#">Item №5</a></li>
-            </ul>
-        </li>
-        <li class="main_item"><a href="#">Main item 3</a>
-
-        </li>
-        <li class="main_item"><a href="#">Main item 4</a>
-
-        </li>
-        <li class="main_item"><a href="#">Main item 5</a>
-            <ul class="main_item_ul">
-                <li class="item_inner"><a href="#">Item №1</a></li>
-                <li class="item_inner"><a href="#">Item №2</a></li>
-                <li class="item_inner"><a href="#">Item №3</a></li>
-                <li class="item_inner"><a href="#">Item №4</a></li>
-                <li class="item_inner"><a href="#">Item №5</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-
-<script type="text/javascript">
-    jQuery(document).ready(function(){
-       jQuery(".main_item").mouseenter(
-        function () {
-            jQuery(this).animate({
-                        backgroundColor:"#03C",
-        }, 1000 );
-
-    });
-    jQuery(".main_item").mouseleave(function() {
-        jQuery(this).animate({
-                    backgroundColor:"#0CF",
-    }, 1000 );
-    });
-    });
-</script>
-
-
-<!--
 <h1>Тест по програмировинию</h1>
-&lt;!&ndash; ul.questions>(li>(ul>(li>{Вариант ответа №$})*3))*3&ndash;&gt;
+<!-- ul.questions>(li>(ul>(li>{Вариант ответа №$})*3))*3-->
 <form action="answers">
     <ul class="questions">
         <li>
@@ -103,7 +37,7 @@
             </ul>
         </li>
     </ul>
-    <button type="submit">Проверить мои результаты</button>-->
-<!--</form>-->
+    <button type="submit">Проверить мои результаты</button>
+</form>
 </body>
 </html>
