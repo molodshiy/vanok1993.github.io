@@ -145,9 +145,9 @@ nav ul li ul li {
     max-height: 0;
     overflow: hidden;
 
-    -webkit-transition:max-height 0.4s linear;
-    -moz-transition:max-height 0.4s linear;
-    transition:max-height 0.4s linear;
+    -webkit-transition:max-height 0.2s linear;
+    -moz-transition:max-height 0.2s linear;
+    transition:max-height 0.2s linear;
 }
 
 .item_inner {
@@ -155,8 +155,8 @@ nav ul li ul li {
 }
 
 .main_item:hover .main_item_ul{
-    clear: both;
     max-height: 200px;
+    overflow: visible;
 }
 
 .item_inner_ul {
