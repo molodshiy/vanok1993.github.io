@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leson 13-14</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tmpl.js"></script>
+</head>
+<body>
+<h1 class="title">Тест по програмировинию</h1>
+
+<form action="answers">
+    <script type="text/html" id="formTmpl">
+        <ul class="test">
+            <li><h3 class="questions_title"><%=qst1%></h3>
+            <li class="questions_item"><input type="checkbox" id="q1ch1"><span><%=qst1Var1%></span></li>
+            <li class="questions_item"><input type="checkbox" id="q1ch2"><span><%=qst1Var2%></span></li>
+            <li class="questions_item"><input type="checkbox" id="q1ch3"><span><%=qst1Var3%></span></li>
+            </li>
+            <li><h3 class="questions_title"><%=qst2%></h3>
+            <li class="questions_item"><input type="checkbox" id="q2ch1"><span><%=qst2Var1%></span></li>
+            <li class="questions_item"><input type="checkbox" id="q2ch2"><span><%=qst2Var2%></span></li>
+            <li class="questions_item"><input type="checkbox" id="q2ch3"><span><%=qst2Var3%></span></li>
+            </li>
+            <li><h3 class="questions_title"><%=qst3%></h3>
+            <li class="questions_item"><input type="checkbox" id="q3ch1"><span><%=qst3Var1%></span></li>
+            <li class="questions_item"><input type="checkbox" id="q3ch2"><span><%=qst3Var2%></span></li>
+            <li class="questions_item"><input type="checkbox" id="q3ch3"><span><%=qst3Var3%></span></li>
+            </li>
+        </ul>
+        <button type="button" class="bt_submit" id="button">Проверить мои результаты</button>
+    </script>
+</form>
+</body>
+</html>

@@ -1,6 +1,7 @@
 /**
  * Created by Vania on 16.12.2015.
  */
+
 var body = document.body;
 var title = createTitle();
 var form = createForm();
