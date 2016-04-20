@@ -8,10 +8,10 @@
     <script src="js/script.js"></script>
     <script src="js/tmpl.js"></script>
 </head>
-<body>
+<body onLoad="res()" onUnload="res()">
 <h1 class="title">Тест по програмировинию</h1>
 
-<form action="answers">
+<form action="answers" name="test">
     <script type="text/html" id="formTmpl">
         <ul class="test">
             <li><h3 class="questions_title"><%=qst1%></h3>

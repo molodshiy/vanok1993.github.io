@@ -6,12 +6,13 @@
 
 window.onload = function () {
 
-    var answers = {
-        'ans1': '3',
-        'ans2': '1',
-        'ans3': '2'
+    var answersObj = {
+        'ans1': 'q1ch3',
+        'ans2': 'q2ch1',
+        'ans3': 'q3ch2'
     };
-    localStorage.setItem('answers', JSON.stringify(answers));
+
+    localStorage.setItem('answers', JSON.stringify(answersObj));
 
     var questions = {};
     createQuestions(3, 3);
@@ -38,11 +39,54 @@ window.onload = function () {
         }
     }
 
+    var answersStr = localStorage.getItem('answers');
+    var answers = JSON.parse(answersStr);
+
+    var checkboxs = document.getElementsByTagName('input');
+    var checkboxsId = [];
+    var result = [false, false, false];
+
     function checkTest() {
-        var result = [false, false, false];
-        if (document.getElementById('q1ch3').checked) {
-            result[1] = true;
+        findId();
+        if (checkCountAnswers()){
+            checkAns();
+            alert(result);
         }
-        alert(result);
+    }
+
+    function checkCountAnswers() {
+        var countAnsInQues = [0, 0, 0];
+        for (var i = 0; i < checkboxsId.length; i++) {
+            if (checkboxs[i].checked) {
+                countAnsInQues[checkboxsId[i].charAt(1) - 1] += 1;
+            }
+        }
+        function isTwoAnswers(number) {
+            return number > 1;
+        }
+
+        if (countAnsInQues.some(isTwoAnswers)) {
+            alert('Виберіть одну відповідь в питанні!');
+            return false;
+        }
+        return true;
+    }
+
+    function checkAns() {
+        for(var i = 0; i < checkboxsId.length; i++){
+            if(checkboxs[i].checked){
+                var ansKey = "ans" +checkboxsId[i].charAt(1);
+                if (checkboxsId[i] === answers[ansKey]){
+                    result[checkboxsId[i].charAt(1) -1] = true;
+                }
+            }
+        }
+    }
+
+    function findId (){
+        for (var i = 0; i < checkboxs.length; i++) {
+            var id = checkboxs[i].getAttribute('id');
+            checkboxsId.push(id);
+        }
     }
 }
