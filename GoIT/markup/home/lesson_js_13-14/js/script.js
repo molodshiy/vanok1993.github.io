@@ -48,7 +48,7 @@ window.onload = function () {
 
     function checkTest() {
         findId();
-        if (checkCountAnswers()){
+        if (checkCountAnswers()) {
             checkAns();
             alert(result);
         }
@@ -56,11 +56,14 @@ window.onload = function () {
 
     function checkCountAnswers() {
         var countAnsInQues = [0, 0, 0];
-        for (var i = 0; i < checkboxsId.length; i++) {
-            if (checkboxs[i].checked) {
-                countAnsInQues[checkboxsId[i].charAt(1) - 1] += 1;
+
+        $('input').each(function () {
+            if ($(this).is(':checked')) {
+                var id = this.getAttribute('id');
+                countAnsInQues[id.charAt(1) - 1] += 1;
             }
-        }
+        });
+
         function isTwoAnswers(number) {
             return number > 1;
         }
@@ -73,17 +76,21 @@ window.onload = function () {
     }
 
     function checkAns() {
-        for(var i = 0; i < checkboxsId.length; i++){
-            if(checkboxs[i].checked){
-                var ansKey = "ans" +checkboxsId[i].charAt(1);
-                if (checkboxsId[i] === answers[ansKey]){
-                    result[checkboxsId[i].charAt(1) -1] = true;
+        for (var i = 0; i < checkboxsId.length; i++) {
+
+            $('input').each(function () {
+                if ($(this).is(':checked')) {
+                    var id = this.getAttribute('id');
+                    var ansKey = "ans" + id.charAt(1);
+                    if (id === answers[ansKey]) {
+                        result[id.charAt(1) - 1] = true;
+                    }
                 }
-            }
+            });
         }
     }
 
-    function findId (){
+    function findId() {
         for (var i = 0; i < checkboxs.length; i++) {
             var id = checkboxs[i].getAttribute('id');
             checkboxsId.push(id);

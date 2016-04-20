@@ -22,6 +22,7 @@ body {
 
 .questions_item {
     margin-left: 20px;
+    list-style: none;
 }
 
 .bt_submit {
