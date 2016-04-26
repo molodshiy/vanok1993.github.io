@@ -23,8 +23,15 @@ window.onload = function () {
     var content = tmpl($formTmpl, questions);
     $('body').append(content);
 
-    var button = document.getElementById('button');
-    button.addEventListener('click', checkTest);
+    var bnCheck = document.getElementById('bnCheck');
+    bnCheck.addEventListener('click', checkTest);
+
+    var bnReset = document.getElementById('bnReset');
+    bnReset.addEventListener('click', resetForm);
+
+    var result = document.getElementById('result');
+    var ulAns = document.createElement('ul');
+
 
     function createQuestions(quests, variants) {
         for (var i = 1; i <= quests; i++) {
@@ -39,18 +46,27 @@ window.onload = function () {
         }
     }
 
+
     var answersStr = localStorage.getItem('answers');
     var answers = JSON.parse(answersStr);
 
     var checkboxs = document.getElementsByTagName('input');
     var checkboxsId = [];
-    var result = [false, false, false];
+    var results = [false, false, false];
+
+
+    function resetForm(){
+        document.getElementById('testForm').reset();
+        result.classList.remove('result_show');
+        ulAns.innerHTML = '';
+        results = [false, false, false];
+    }
 
     function checkTest() {
         findId();
         if (checkCountAnswers()) {
             checkAns();
-            alert(result);
+            showResult();
         }
     }
 
@@ -83,7 +99,7 @@ window.onload = function () {
                     var id = this.getAttribute('id');
                     var ansKey = "ans" + id.charAt(1);
                     if (id === answers[ansKey]) {
-                        result[id.charAt(1) - 1] = true;
+                        results[id.charAt(1) - 1] = true;
                     }
                 }
             });
@@ -95,5 +111,15 @@ window.onload = function () {
             var id = checkboxs[i].getAttribute('id');
             checkboxsId.push(id);
         }
+    }
+
+    function showResult(){
+        for (var i in results){
+            var li = document.createElement('li');
+            li.innerHTML = i  +'. ' +results[i];
+            ulAns.appendChild(li);
+        }
+        result.insertBefore(ulAns, result.children[1]);
+        result.classList.add('result_show');
     }
 }

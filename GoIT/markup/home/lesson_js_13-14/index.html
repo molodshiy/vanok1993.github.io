@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>Leson 13-14</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="js/script.js"></script>
     <script src="js/tmpl.js"></script>
 </head>
 <body>
 <h1 class="title">Тест по програмировинию</h1>
+<script type="text/html" id="formTmpl">
+<form id="testForm">
 
-<form id="form">
-    <script type="text/html" id="formTmpl">
         <ul class="test">
             <li><h3 class="questions_title"><%=qst1%></h3>
                 <ul>
@@ -49,8 +49,14 @@
                 </ul>
             </li>
         </ul>
-        <button type="button" class="bt_submit" id="button">Проверить мои результаты</button>
-    </script>
+        <button type="button" class="btn bt_submit" id="bnCheck">Проверить мои результаты</button>
 </form>
+<div class="result" id="result">
+    <h2 class="title">Результати</h2>
+    <button type="button" class="btn bt_close" id="bnReset">Закрити тест</button>
+</div>
+</script>
+
+
 </body>
 </html>
