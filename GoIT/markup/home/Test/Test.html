@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.color.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>-->
 
 </head>
 <body>
 <h1>Тест по програмировинию</h1>
 <!-- ul.questions>(li>(ul>(li>{Вариант ответа №$})*3))*3-->
-<form action="answers">
+<form action="answers" id="form">
     <ul class="questions">
         <li>
             <h3>1. Вопрос №1</h3>
@@ -37,7 +37,15 @@
             </ul>
         </li>
     </ul>
-    <button type="submit">Проверить мои результаты</button>
+    <button type="button">Проверить мои результаты</button>
 </form>
+<script type="text/javascript">
+    var form = document.getElementById('form');
+    form.addEventListener('click', res);
+    function res() {
+        document.getElementById('form').reset();
+        alert("rwe");
+    }
+</script>
 </body>
 </html>

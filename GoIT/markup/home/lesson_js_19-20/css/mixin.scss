@@ -1,0 +1,10 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/*
+src: ['GoIT/markup/home/lesson_js_19-20/css/variables.scss', 'GoIT/markup/home/lesson_js_19-20/css/reset.scss', 'GoIT/markup/home/lesson_js_19-20/css/mixin.scss'],
+dest: 'GoIT/markup/home/lesson_js_19-20/css/main.css'*/
