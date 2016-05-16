@@ -3,88 +3,144 @@
 @import "reset";
 
 body {
-  width: 1160px;
-  margin: 0 auto;
+
+}
+
+h3 {
+  padding: 10px 0;
 }
 
 header {
-  margin: 37px 0;
-  .logo {
-    float: left;
-    display: flex;
-    .title {
-      margin-left: 10px;
+  width: 1160px;
+  margin: 37px auto;
+  .header_top {
+
+    .logo {
+      float: left;
+      display: flex;
+      .title {
+        margin-left: 10px;
+        float: right;
+        color: $color-gray;
+      }
+      .sub_title {
+        font-size: 10px;
+        color: $color-gray-social;
+      }
+    }
+    .socials {
       float: right;
-      color: $color-gray;
-    }
-    .sub_title {
-      font-size: 10px;
-      color: $color-gray-social;
     }
   }
-  .socials {
-    float: right;
+
+  .menu {
+    position: relative;
+    background-color: $color-gray;
+    margin-bottom: 40px;
+
+    li {
+      float: left;
+      list-style: none;
+      border-right: 1px solid $color-border;
+      /*@include border-radius(10px);*/
+
+      a {
+        padding: 0 40px;
+        line-height: 50px;
+        text-decoration: none;
+        color: $color-white;
+      }
+
+      a:hover {
+        color: yellow;
+      }
+
+    }
+    li:hover {
+      background-color: $color-blue;
+    }
+
+    form {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      input {
+        width: 240px;
+        height: 34px;
+        box-sizing: border-box;
+        background-color: $color-gray;
+        border-color: $color-border;
+      }
+    }
   }
-}
 
-.menu {
-  position: relative;
-  background-color: $color-gray;
-  margin-bottom: 40px;
+  .jcarousel {
+    position: relative;
+    overflow: hidden;
+  }
 
-  li {
-    float: left;
+  .jcarousel ul {
+    width: 20000em;
+    position: relative;
     list-style: none;
-    border-right: 1px solid $color-border;
-    /*@include border-radius(10px);*/
+    margin: 0;
+    padding: 0;
+    .jcarousel li {
+      float: left;
+    }
+  }
 
-    a {
-      padding: 0 40px;
-      line-height: 50px;
-      text-decoration: none;
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .info {
+    display: flex;
+
+    .info_item {
+      display: flex;
+      .number_info {
+        font-size: 90px;
+        color: $color-gray-social;
+      }
+      .right_column_info {
+        margin: 15px 20px;
+        p {
+          font-size: 12px;
+          color: $color-gray-social;
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          padding: 10px 10px 10px 0;
+        }
+      }
+    }
+  }
+}
+
+.services {
+  background-color: $color-gray;
+  .services_container {
+    h2 {
+      padding: 45px 0;
       color: $color-white;
+      font-size: 24px;
     }
-
-    a:hover {
-      color: yellow;
-    }
-
-  }
-  li:hover {
-    background-color: $color-blue;
-  }
-
-  form {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    input {
-      width: 240px;
-      height: 34px;
-      box-sizing: border-box;
-      background-color: $color-gray;
-      border-color: $color-border;
+    margin: 50px auto;
+    width: 1160px;
+    .services_content {
+      display: flex;
+      .item_services {
+        h5 {
+          color: $color-white;
+          padding: 45px 0;
+          text-align: center;
+        }
+        margin-right: 40px;
+        background-position: center;
+      }
     }
   }
-}
-
-.jcarousel {
-  position: relative;
-  overflow: hidden;
-}
-
-.jcarousel ul {
-  width: 20000em;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  .jcarousel li {
-    float: left;
-  }
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: auto;
 }
