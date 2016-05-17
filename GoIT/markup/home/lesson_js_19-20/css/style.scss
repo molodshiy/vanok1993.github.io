@@ -149,12 +149,12 @@ header {
 
 .news {
   background-color: $color-bg-cream;
-  margin: 45px 0;
   .news_container {
     margin: 0 auto;
     width: 1160px;
     display: flex;
     .news_block {
+      width: 50%;
       h2 {
         color: $color-gray;
       }
