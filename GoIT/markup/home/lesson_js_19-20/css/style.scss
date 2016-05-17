@@ -153,6 +153,12 @@ header {
     margin: 0 auto;
     width: 1160px;
     display: flex;
+    .nb_odd {
+      margin-right: 20px;
+    }
+    .nb_pair {
+      margin-left: 20px;
+    }
     .news_block {
       width: 50%;
       h2 {
@@ -185,15 +191,44 @@ header {
 
       .banners_place {
 
+        h4:before {
+          content: "";
+          width: 9px;
+          height: 1px;
+          background-color: $color-border;
+          position: absolute;
+          top: 20px;
+          left: 12px;
+        }
+        h4:after {
+          content: "";
+          width: 1px;
+          height: 9px;
+          background-color: $color-border;
+          position: absolute;
+          top: 16px;
+          left: 16px;
+        }
+
         h4 {
-          color: $color-white;
-          background: $color-hover;
+          position: relative;
+          background: $color-white;
           text-transform: uppercase;
           font-size: 13px;
+          line-height: 40px;
+          padding-left: 40px;
+          border: 1px solid $color-gray-social;
+          margin-bottom: 5px;
+        }
+        .h4_click {
+          background: $color-hover;
+          color: $color-white;
         }
         p {
+          color: $color-gray-social;
           font-size: 13px;
-          margin: 15px 0 15px 15px;
+          margin: 40px;
+          display: none;
         }
       }
     }
