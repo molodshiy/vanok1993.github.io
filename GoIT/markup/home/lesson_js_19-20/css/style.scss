@@ -19,7 +19,7 @@ header {
   width: 1160px;
   margin: 37px auto;
   .header_top {
-
+    margin-bottom: 37px;
     .logo {
       float: left;
       display: flex;
@@ -175,7 +175,7 @@ header {
             span {
               font-size: 13px;
               color: $color-gray-social;
-              a{
+              a {
                 font-size: 13px;
                 text-decoration: none;
               }
@@ -234,3 +234,66 @@ header {
     }
   }
 }
+
+.partners {
+  width: 1160px;
+  margin: 90px auto;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+}
+
+footer {
+  .site {
+    background-color: $color-gray;
+    padding: 45px 0;
+    .site_container {
+      width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .site_item {
+        width: 260px;
+        h5 {
+          text-transform: uppercase;
+          color: $color-white;
+        }
+        ul {
+          list-style: none;
+          margin: 45px 0;
+          li {
+            border-bottom: 1px solid $color-text-gray;
+            a {
+              font-size: 13px;
+              text-decoration: none;
+              line-height: 35px;
+              color: $color-text-gray;;
+            }
+            a:hover {
+              color: $color-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer_contacts {
+    background-color: $color-bg-footer;
+    padding: 20px 0;
+    .contacts_container {
+      margin: 0 auto;
+      width: 1160px;
+      font-size: 13px;
+      color: $color-text-gray;
+      span {
+        font-size: 13px;
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
