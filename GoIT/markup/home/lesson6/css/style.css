@@ -72,7 +72,13 @@ ul > li {
 }
 
 .registration_form {
+    font-size: 11px;
     float: left;
+}
+
+.registration_form a{
+    margin-top: 6px;
+    display: inline-block;
 }
 
 .icon_author {
@@ -227,7 +233,7 @@ header img {
 }
 
 .content {
-    margin-top: 162px;
+    margin-top: 10px;
 }
 
 .catalog {
@@ -260,7 +266,7 @@ header img {
     line-height: 28px;
 }
 
-.h3_big {
+.title_main {
     width: 154px;
     margin-bottom: 14px;
 }
@@ -269,11 +275,11 @@ header img {
     margin: 3px;
 }
 
-.h3_medium {
+.title {
     width: 124px;
 }
 
-.h3_small {
+.title_brand {
     width: 110px;
 }
 
@@ -467,7 +473,7 @@ footer ul li a {
     font-size: 12px;
 }
 
-.vr_separator:after {
+.footer_menu li:after {
     content: " ";
     display: inline-block;
     width: 2px;
@@ -477,7 +483,9 @@ footer ul li a {
     background: white;
     box-sizing: border-box;
 }
-
+.footer_menu li:last-child:after{
+    display: none;
+}
 footer ul li a:hover {
     color: #4d9fbd;
 }
