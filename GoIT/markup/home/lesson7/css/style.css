@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'league_gothiccondensed_italic';
+    src: url('fonts/leaguegothic-condenseditalic-webfont.woff2') format('woff2'),
+    url('fonts/leaguegothic-condenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league_gothicCnRg';
+    src: url('fonts/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+    url('fonts/leaguegothic-condensedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league_gothicitalic';
+    src: url('fonts/leaguegothic-italic-webfont.woff2') format('woff2'),
+    url('fonts/leaguegothic-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+    url('fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'league_gothicregular', sans-serif;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+}
+
+header {
+    margin: 60px auto;
+    width: 960px;
+    padding-left: 12px;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+}
+
+.logo:before {
+    content: url("../img/logoAp.png");
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+/*    letter-spacing: -0.6px;*/
+}
+
+.logo a span {
+    text-shadow: none;
+    color: #5e426b;
+}
+
+nav {
+    display: inline-block;
+    font-size: 24px;
+    text-transform: uppercase;
+    float: right;
+    line-height: 52px;
+}
+
+.nav_menu li {
+    position: relative;
+    display: inline-block;
+    margin-left: 36px;
+    padding: 0 5px 0 7px;
+}
+
+.nav_menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_menu li:last-child {
+    margin-right: -5px;
+}
+
+.nav_menu li:hover:after {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    content: "";
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: #edbfff;
+}
+
