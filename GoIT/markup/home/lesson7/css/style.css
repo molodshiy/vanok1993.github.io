@@ -47,15 +47,15 @@
     clear: both;
 }
 
-body {
+.container {
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
 }
 
 header {
-    margin: 60px auto;
     width: 960px;
-    padding-left: 12px;
+    margin: 0 auto;
+    padding:60px 0 60px 12px;
 }
 
 .logo {
@@ -119,3 +119,87 @@ nav {
     background-color: #edbfff;
 }
 
+
+.slider {
+    position: relative;
+}
+
+.slider:before {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 4%;
+    height: 400px;
+    width: 100%;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 82px auto;
+    position: relative;
+}
+
+.leftTurn {
+    position: absolute;
+    left: -314px;
+    top: 45%;
+}
+
+.rightTurn {
+    position: absolute;
+    right: -330px;
+    top: 45%;
+}
+
+.description {
+    width: 500px;
+    float: left;
+    margin: 88px 0 0 12px;
+}
+
+.main_images {
+    float: left;
+    margin-left: 112px;
+    position: relative;
+}
+
+.play {
+    position: absolute;
+    top: 37%;
+    left: 55%;
+}
+
+.play:hover ~.circle{
+    display: block;
+}
+
+.circle {
+    display: none;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+}
+
+.indexSlider {
+    text-align: center;
+    margin: 70px 0px 0 582px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 32px;
+    color: #edbfff;
+    font-weight: normal;
+}
+
+p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
