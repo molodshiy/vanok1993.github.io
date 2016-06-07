@@ -129,15 +129,16 @@ nav {
     display: block;
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 4%;
+    top: 9%;
     height: 400px;
     width: 100%;
 }
 
 .wrapper {
     width: 960px;
-    margin: 82px auto;
+    margin: 50px auto;
     position: relative;
+    padding-top: 36px;
 }
 
 .leftTurn {
@@ -158,7 +159,7 @@ nav {
     margin: 88px 0 0 12px;
 }
 
-.main_images {
+.main_img {
     float: left;
     margin-left: 112px;
     position: relative;
@@ -198,8 +199,37 @@ h2 {
     font-weight: normal;
 }
 
+h3 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 p {
     font-size: 18px;
     color: #fff;
     font-weight: normal;
+}
+
+.about {
+    background-color: #533b5e;
+}
+
+.about_wrapper {
+    margin: 0 auto;
+    width: 960px;
+    padding: 100px 0;
+}
+
+.block_about {
+    margin: 0 40px;
+    width: 230px;
+    display: inline-block;
+}
+
+.block_about a {
+    color: #fff;
+    font-size: 22px;
+    float: right;
+    text-decoration: none;
 }
