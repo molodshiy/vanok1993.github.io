@@ -47,9 +47,7 @@ ul > li {
 }
 
 .icon_phone {
-    position: absolute;
-    top: 1px;
-    left: 4px;
+    background: url("../img/icons/icon_phone.png") #103d62 4px 2px no-repeat;
 }
 
 .number {
@@ -72,6 +70,7 @@ ul > li {
 }
 
 .registration_form {
+    padding-left: 16px;
     font-size: 11px;
     float: left;
 }
@@ -82,9 +81,7 @@ ul > li {
 }
 
 .icon_author {
-    margin-top: 4px;
-    display: block;
-    float: left;
+    background: url("../img/icons/icon_author.png") 0 4px no-repeat;
 }
 
 .input_text {
@@ -200,15 +197,20 @@ header img {
 .shop_account {
     position: relative;
     width: 220px;
+    height: 21px;
     color: white;
     display: inline-block;
     margin-left: 53px;
     font-size: 11px;
 }
 
+.icon_cart {
+    background: url("../img/icons/cart.png") 0 5px no-repeat;
+}
+
 .shop_account p {
     position: absolute;
-    top: 2px;
+    top: 8px;
     left: 28px;
 }
 
@@ -250,9 +252,7 @@ header img {
 }
 
 .icon_catalog {
-    position: absolute;
-    top: 3px;
-    left: 4px;
+    background: url("../img/icons/icon_catalog.png") #103d62 4px 2px no-repeat;
 }
 
 .content h3 {
