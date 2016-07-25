@@ -1,0 +1,55 @@
+// 1. Bands list
+// 2. Albums list by click on band_name or some additional button
+// 3. Sort by band_name, rate, origin year
+// 4. Cover photo preview
+
+{
+  "id": 1,
+  "band_name": "Muse",
+  "members": [
+    "Matt Bellamy",
+    "Chris Wolstenholme",
+    "Dominic Howard"
+  ],
+  "country": "UK",
+  "rate": 5,
+  "origin": 1992,
+  "band_photo": "muse.png",
+  "albums": [
+    {
+      "name": "Showbiz",
+      "cover": "showbiz.png",
+      "year": 1999
+    },
+    {
+      "name": "Origin of Symmetry",
+      "cover": "origin_of_symmetry.png",
+      "year": 2001
+    },
+    {
+      "name": "Absolution",
+      "cover": "absolution.png",
+      "year": 2003
+    },
+    {
+      "name": "Black Holes and Revelations",
+      "cover": "black_holes_and_revelations.png",
+      "year": 2006
+    },
+    {
+      "name": "The Resistance",
+      "cover": "resistance.png",
+      "year": 2009
+    },
+    {
+      "name": "The 2nd Law",
+      "cover": "2nd_law.png",
+      "year": 2012
+    },
+    {
+      "name": "Drones",
+      "cover": "drones.png",
+      "year": 2015
+    }
+  ]
+}
