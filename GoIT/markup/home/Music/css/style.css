@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body {
+    color: #666;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
 li {
     list-style: none;
 }
@@ -15,6 +21,15 @@ h1 {
 
 h2 {
     color: #ff9928;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+#wrapper {
+    float: left;
 }
 
 header {
@@ -45,4 +60,43 @@ header {
     float: left;
 }
 
+.albums {
+    display: none;
+}
 
+.about_album {
+    float: left;
+}
+
+ol {
+    font-size: 14px;
+}
+
+ol li {
+    margin-left: 30px;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    list-style: inherit;
+}
+
+ol li a {
+    display: block;
+    padding-left: 20px;
+}
+
+li.playing, li.playing a {
+    color: #000;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+li.playing:before {
+    content: '♬';
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    color: #000;
+    font-size: 13px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
