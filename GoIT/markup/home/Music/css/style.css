@@ -3,70 +3,174 @@
     padding: 0;
 }
 
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 body {
     color: #666;
     font-family: sans-serif;
-    line-height: 1.4;
 }
 
 li {
     list-style: none;
 }
-
+/**/
 h1 {
-    text-align: center;
-    color: red;
-    font-size: 72px;
+    color: #ffffff;
+    font-size: 50px;
 }
-
+/**/
 h2 {
-    color: #ff9928;
+    color: #70ccd7;
+    font-size: 24px;
+    padding: 15px 0 0 10px;
+    text-transform: uppercase;
 }
-
+/**/
 a {
     color: #888;
     text-decoration: none;
 }
-
+/**/
 #wrapper {
     float: left;
 }
-
+/**/
 header {
-    margin: 20px;
-    background: linear-gradient(to left, #0900ff, #ff0721);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    height: 66px;
+    
+    line-height: 66px;
+    background-color: #070f13;
+    text-align: center;
+    border-bottom: 1px solid #70ccd7;
 }
 
-.box {
+.logo {
+    width: 262px;
+    vertical-align: middle;
+}
+
+.container {
+    background: linear-gradient(#000102, #081e29);
+}
+
+.wrapper_band {
+    position: relative;
+    overflow: hidden;
+}
+
+.bands {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #244246;
+}
+
+.search {
+    width: 270px;
+    margin: 8px;
+    line-height: 28px;
+    border-radius: 14px;
+    padding-left: 10px;
+    border: none;
+    background-color: #284f54;
+   /*color: #1d3538;*/
+}
+
+
+.wrapper_sort {
+    line-height: 38px;
+    border-top: 1px solid #244246;
+    border-bottom: 1px solid #244246;
+}
+
+.wrapper_sort span {
     float: left;
-    width: 200px;
-    margin: 10px;
-    border: 2px solid #000080;
-    border-radius: 5px;
 }
 
-.box li {
-    background-color: #D6CE7D;
+.wrapper_sort select {
+    float: right;
+}
+
+
+.list_bands li {
     padding: 2px 0px 2px 6px;
 }
 
-.box li:hover {
-    background-color: #d69552;
+.list_bands li:hover {
+    background-color: #1d3538;
+}
+
+.album_active {
+    color: #ffffff;
 }
 
 .about_band {
+    padding: 20px;
+    background-color: #0c1719;
+}
+
+.about_band img {
     float: left;
+    width: 250px;
+    height: 250px;
+}
+
+.rate {
+    content: "";
+    display: block;
+    width: 127px;
+    height: 17px;
+}
+
+.rate1 {
+    background: url("../img/rates/star_rate1.png") no-repeat;
+}
+
+.rate2 {
+    background: url("../img/rates/star_rate2.png") no-repeat;
+}
+
+.rate3 {
+    background: url("../img/rates/star_rate3.png") no-repeat;
+}
+
+.rate4 {
+    background: url("../img/rates/star_rate4.png") no-repeat;
+}
+
+.rate5 {
+    background: url("../img/rates/star_rate5.png") no-repeat;
+}
+
+.wrapper_content{
+    margin: 22px 22px 22px 322px;
 }
 
 .albums {
     display: none;
 }
 
-.about_album {
-    float: left;
+.list_albums li {
+    padding: 5px 5px 5px 30px;
+    margin: 12px;
+    background-color: #10242a;
 }
+
+.album_active {
+    display: block;
+}
+
+.album_hide {
+    display: none;
+}
+
+
+
 
 ol {
     font-size: 14px;

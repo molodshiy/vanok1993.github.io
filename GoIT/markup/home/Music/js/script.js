@@ -16,13 +16,13 @@ $(function () {
     });
 
     function funcBefore() {
-       /* $('#text').text("Waiting...");*/
+        /* $('#text').text("Waiting...");*/
     }
 
     function funcSuccess(data) {
 
         objBands = JSON.parse(data);
-       /* $('#text').text("Success");*/
+        /* $('#text').text("Success");*/
 
         writeBandName(objBands);
 
@@ -39,11 +39,14 @@ $(function () {
     function showBand() {
         $('.albums').css("display", "block");
         $('.about_album').text("");
-        var currentElementBandName = $(this).html();
+        var currentElementBand = $(this);
+
+        var currentElementBandName = currentElementBand.html();
         var bandId = 0,
             bandName = 0,
             bandMembers = [],
             bandCountry = 0,
+            bandRate = 0,
             bandOriginal = 0,
             bandPhoto = 0;
         objBands.bands.forEach(function (s, i) {
@@ -52,14 +55,23 @@ $(function () {
                 bandName = s.band_name;
                 bandMembers = s.members;
                 bandCountry = s.country;
+                bandRate = s.rate;
+
                 bandOriginal = s.origin;
                 bandPhoto = s.band_photo;
             }
         });
+        console.log(classStarRate);
+        var classStarRate = "rate" + bandRate;
+
         var imgBand = "<img src=" + "\"img/" + bandPhoto + "\"" + ">";
         $('.about_band').text("")
             .append(imgBand)
-            .append('<p>' + bandName + '</p>')
+            .append('<div class="content_band"></div>');
+
+        $('.content_band').text("")
+            .append('<h1 class="band_nane">' + bandName + '</h1>')
+            .append('<span class="rate ' + classStarRate + '"></span>')
             .append('<p>' + bandMembers + '</p>')
             .append('<p>' + bandCountry + '</p>')
             .append('<p>' + bandOriginal + '</p>');
@@ -67,54 +79,55 @@ $(function () {
         writeBandAlbums(bandId);
     }
 
+
+    function changeClassActive() {
+        $('.album_active').addClass('album_hide');
+        $('.album_active').removeClass('album_active');
+
+        var q = $(this).find('.album_hide');
+        q.removeClass('album_hide');
+        q.addClass('album_active');
+
+        /*player(albumName);*/
+    }
+
     function writeBandAlbums(bandId) {
         var listAlbums = $('.list_albums');
         listAlbums.text("");
         albums = objBands.bands[bandId - 1].albums;
         albums.forEach(function (s, i) {
-            $('.list_albums').append('<li>' + s.name + '</li>');
+            $('.list_albums').append('<li id="album' + i + '"> <h3 class="album_name">' + s.name + '</h3></li>');
+            var e = $('#album' + i + '');
+            var imgAlbum = "<img src=" + "\"img/albums/muse/" + albums[i].cover + "\"" + ">";
+            e.append('<div class="album_hide" id="albumInfo' + i + '">' + imgAlbum + '</div>');
+            $('#albumInfo' + i + '').append(albums[i].year);
         });
-        $('.list_albums').children().on('click', showAlbum);
+
+        $('.list_albums').children().on('click', changeClassActive);
     }
+
 
     function showAlbum() {
-        var currentElementAlbumName = $(this).html();
-        var albumId = 0,
-            albumName = 0,
-            albumCover = 0,
-            albumYear = 0;
-        albums.forEach(function (s, i) {
-            if (s.name === currentElementAlbumName) {
-                albumId = i;
-                albumName = s.name;
-                albumCover = s.cover;
-                albumYear = s.year;
-            }
-        });
-        $('.about_album').text("")
-            .append('<p>' + albumName + '</p>')
-            .append('<p>' + albumCover + '</p>')
-            .append('<p>' + albumYear + '</p>');
 
-        player(albumName);
+
     }
 
 
-    function player(albumName){
+    function player(albumName) {
         //Player
 
         $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/Cave.mp3">Cave</a></li>');
 
         //Find soungs
         /*$.ajax({
-            url: "info/mp3/muse/showbiz/",
-            success: function(data){
-                $(data).find('a:contains(" .mp3 ")').each(function(){
-                    // will loop through
-                    alert("Found a file: " + $(this).attr("href"));
-                });
-            }
-        });*/
+         url: "info/mp3/muse/showbiz/",
+         success: function(data){
+         $(data).find('a:contains(" .mp3 ")').each(function(){
+         // will loop through
+         alert("Found a file: " + $(this).attr("href"));
+         });
+         }
+         });*/
 
 
         // Setup the player to autoplay the next track
@@ -155,7 +168,31 @@ $(function () {
                 // spacebar
             } else if (unicode == 32) {
                 audio.playPause();
+
+
+                /* var currentElementAlbum = $(this);
+                 currentElementAlbum.append('<div class="about_album"></div>');
+                 var currentElementAlbumName = currentElementAlbum.html();
+                 var albumId = 0,
+                 albumName = 0,
+                 albumCover = 0,
+                 albumYear = 0;
+                 albums.forEach(function (s, i) {
+                 if (s.name === currentElementAlbumName) {
+                 albumId = i;
+                 albumName = s.name;
+                 albumCover = s.cover;
+                 albumYear = s.year;
+                 }
+                 });
+                 $('.about_album').text("")
+                 .append('<p>' + albumName + '</p>')
+                 .append('<p>' + albumCover + '</p>')
+                 .append('<p>' + albumYear + '</p>');
+
+                 player(albumName);*/
             }
         })
     }
-});
+})
+;

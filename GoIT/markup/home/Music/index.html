@@ -11,31 +11,51 @@
 </head>
 <body>
 <header>
-    <h1>Music Player</h1>
+    <img class="logo" src="img/hedgehog_logo.svg">
 </header>
 
-<div class="box bands">
-    <h2>Bands</h2>
-    <ul class="list list_bands">
-    </ul>
+<div class="container clearfix">
+    <div class="wrapper_band clearfix">
+        <div class="bands">
+            <h2>Bands</h2>
+
+            <form>
+                <input class="search" placeholder="Search">
+            </form>
+            <div class="wrapper_sort clearfix">
+                <span class="clearfix">Sort by:</span>
+                <select class="clearfix">
+                    <option>Name</option>
+                    <option>Year</option>
+                    <option>Rate</option>
+                </select>
+            </div>
+            <ul class="list_bands">
+            </ul>
+        </div>
+        <div class="wrapper_content">
+
+            <div class="about_band clearfix">
+                <img class="clearfix" src="img/img_band.png">
+            </div>
+
+            <div class="box albums">
+                <h2>Albums</h2>
+                <ul class="list_albums">
+                </ul>
+            </div>
+
+            <div id="wrapper clearfix">
+                <audio preload></audio>
+                <ol class="list_songs">
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+
 </div>
-
-<div class="about_band"></div>
-
-<div class="box albums">
-    <h2>Albums</h2>
-    <ul class="list list_albums">
-    </ul>
-</div>
-<div class="about_album"></div>
-
-<div id="wrapper">
-    <h3 class="player_name"></h3>
-    <audio preload></audio>
-    <ol class="list_songs">
-    </ol>
-</div>
-
 
 <script src="js/script.js"></script>
 </body>

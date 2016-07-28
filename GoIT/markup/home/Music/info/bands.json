@@ -15,37 +15,37 @@
       "albums": [
         {
           "name": "Showbiz",
-          "cover": "showbiz.png",
+          "cover": "showbiz.jpg",
           "year": 1999
         },
         {
           "name": "Origin of Symmetry",
-          "cover": "origin_of_symmetry.png",
+          "cover": "origin_of_symmetry.jpg",
           "year": 2001
         },
         {
           "name": "Absolution",
-          "cover": "absolution.png",
+          "cover": "absolution.jpg",
           "year": 2003
         },
         {
           "name": "Black Holes and Revelations",
-          "cover": "black_holes_and_revelations.png",
+          "cover": "black_holes_and_revelations.jpg",
           "year": 2006
         },
         {
           "name": "The Resistance",
-          "cover": "resistance.png",
+          "cover": "resistance.jpg",
           "year": 2009
         },
         {
           "name": "The 2nd Law",
-          "cover": "2nd_law.png",
+          "cover": "2nd_law.jpg",
           "year": 2012
         },
         {
           "name": "Drones",
-          "cover": "drones.png",
+          "cover": "drones.jpg",
           "year": 2015
         }
       ]
@@ -60,7 +60,7 @@
         "Chris Slade"
       ],
       "country": "AU",
-      "rate": 5,
+      "rate": 4,
       "origin": 1971,
       "band_photo": "acdc.jpg",
       "albums": [
