@@ -157,8 +157,7 @@ $(function () {
         $('.active_album_name').removeClass('active_album_name');
         $(this).children().filter($('.album_name')).addClass('active_album_name');
 
-        var $albumActive = $('.album_active');
-        $albumActive.addClass('album_hide')
+        $('.album_active').addClass('album_hide')
             .removeClass('album_active');
 
         $(this).find('.album_hide')
@@ -166,7 +165,7 @@ $(function () {
             .addClass('album_active');
 
         $('.wrapper').remove();
-        $albumActive.append('<div class="wrapper"></div>');
+        $('.album_active').append('<div class="wrapper"></div>');
         player();
     }
 
@@ -175,8 +174,9 @@ $(function () {
 
         var songs = objBands.bands[0].albums[0].songs;
         for (var i = 0; i < songs.length; i++) {
-            $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/' + songs[i] + '.mp3"></a>' + songs[i] + '</li>');
+            $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/' +songs[i] +'.mp3"></a>' +songs[i]+'</li>');
         }
+
         // Setup the player to autoplay the next track
         var a = audiojs.createAll({
             trackEnded: function () {
