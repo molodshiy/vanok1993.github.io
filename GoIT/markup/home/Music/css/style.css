@@ -31,6 +31,7 @@ h2 {
 }
 
 h3 {
+    padding: 10px 0;
     text-transform: uppercase;
     font-size: 16px;
 }
@@ -41,8 +42,6 @@ a {
 }
 
 header {
-    height: 66px;
-    
     line-height: 66px;
     background-color: #070f13;
     text-align: center;
@@ -79,9 +78,7 @@ header {
     padding-left: 10px;
     border: none;
     background-color: #284f54;
-   /*color: #1d3538;*/
 }
-
 
 .wrapper_sort {
     line-height: 38px;
@@ -94,16 +91,17 @@ header {
 }
 
 .select_sort {
-    width: 80px;
-    background: #010405;
-    color: #545555;
-    border: none;
+    width: 70px;
+    font-size: 16px;
     margin-left: 30px;
+    color: #545555;
+    background: #010405;
+    border: none;
 }
 
-
 .list_bands li {
-    padding: 2px 0px 2px 6px;
+    padding: 5px 0px 5px 35px;
+    background: url("../img/icon_song.png") no-repeat 10px 6px;
 }
 
 .list_bands li:hover {
@@ -114,6 +112,11 @@ header {
     display: flex;
     padding: 20px;
     background-color: #0c1719;
+}
+
+.active_band {
+    color: #fff;
+    background: url("../img/icon_song_active.png") no-repeat 10px 6px !important;
 }
 
 .about_band img {
@@ -151,7 +154,6 @@ header {
 
 .wrapper_content{
     margin: 22px 22px 22px 322px;
-    height: 100vh;
 }
 
 .albums {
@@ -159,6 +161,8 @@ header {
 }
 
 .album_img {
+    width: 200px;
+    height: 200px;
     float: left;
     padding: 20px;
     margin: 0 20px 20px 0;
@@ -170,10 +174,21 @@ header {
 }
 
 .list_albums li {
-    padding: 5px 5px 5px 30px;
-    margin: 12px;
-    background-color: #10242a;
+    margin: 12px 12px 12px 20px;
+    background: #10242a;
 }
+
+.album_name {
+    padding-left: 40px;
+    background: url("../img/icon_song_album.png")  no-repeat 7px 7px;
+}
+
+.active_album_name {
+    color: #fff;
+    background: url("../img/icon_song_album_active.png")  no-repeat 7px 7px;
+}
+
+
 
 .album_active {
     display: block;
@@ -185,8 +200,8 @@ header {
 
 .content_band {
     float: left;
+    margin-left: 25px;
 }
-
 
 ol {
     font-size: 14px;
@@ -207,7 +222,7 @@ ol li a {
 }
 
 li.playing, li.playing a {
-    color: #000;
+    color: #fff;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -215,7 +230,7 @@ li.playing:before {
     content: '♬';
     position: absolute;
     left: 8px;
-    top: 4px;
+    top: 8px;
     color: #fff;
     font-size: 13px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);

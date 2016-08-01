@@ -64,7 +64,7 @@
       "rate": 3,
       "origin": 1971,
       "band_photo": "acdc.jpg",
-      "band_about": "AC/DC are an Australian rock band, formed in 1973 by brothers Malcolm and Angus Young.[1] A hard rock/blues rock band,[2] they have also been considered a heavy metal band, although they have always dubbed their music simply rock and roll.",
+      "about_band": "AC/DC are an Australian rock band, formed in 1973 by brothers Malcolm and Angus Young. A hard rock/blues rock band, they have also been considered a heavy metal band.",
       "albums": [
         {
           "name": "High Voltage",

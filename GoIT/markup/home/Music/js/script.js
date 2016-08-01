@@ -79,7 +79,6 @@ $(function () {
                                 }
                             });
                         }
-
                         break;
 
                     case 'Rate':
@@ -97,8 +96,6 @@ $(function () {
                         break;
                 }
 
-                console.log(JSON.stringify(sortedArr));
-                console.log(JSON.stringify(sortedName));
                 $('.list_bands').text("");
 
                 for (var j = 0; j < sortedName.length; j++) {
@@ -126,6 +123,9 @@ $(function () {
     function showBand() {
         var bandId = -1;
         var $currentElementBand = $(this);
+
+        $currentElementBand.addClass("active_band")
+            .siblings().removeClass("active_band");
 
         var $currentElementBandName = $currentElementBand.text();
 
@@ -171,6 +171,9 @@ $(function () {
     }
 
     function changeClassActive() {
+        $('.active_album_name').removeClass('active_album_name');
+        $(this).children().filter($('.album_name')).addClass('active_album_name');
+
         $('.album_active').addClass('album_hide');
         $('.album_active').removeClass('album_active');
 
