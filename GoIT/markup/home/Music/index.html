@@ -24,10 +24,10 @@
             </form>
             <div class="wrapper_sort clearfix">
                 <span class="clearfix">Sort by:</span>
-                <select class="clearfix">
-                    <option>Name</option>
-                    <option>Year</option>
-                    <option>Rate</option>
+                <select class="select_sort clearfix">
+                    <option value="name">Name</option>
+                    <option value="year">Year</option>
+                    <option value="rate">Rate</option>
                 </select>
             </div>
             <ul class="list_bands">
@@ -36,26 +36,45 @@
         <div class="wrapper_content">
 
             <div class="about_band clearfix">
-                <img class="clearfix" src="img/img_band.png">
+                <img class="img_band" src="img/img_band.png">
+
+                <div class="content_band">
+                    <h1 class="band_name"></h1>
+                    <span class="rate"></span>
+
+                    <h3>About Band</h3>
+
+                    <p class="about_band_info"></p>
+
+                    <h3>Members</h3>
+
+                    <p class="members"></p>
+
+                    <h3>Origin</h3>
+
+                    <p class="origin"></p>
+
+                    <h3>Country</h3>
+
+                    <p class="country"></p>
+                </div>
             </div>
 
-            <div class="box albums">
+            <div class="albums">
                 <h2>Albums</h2>
                 <ul class="list_albums">
                 </ul>
             </div>
-
-            <div id="wrapper clearfix">
-                <audio preload></audio>
-                <ol class="list_songs">
-                </ol>
-            </div>
-
         </div>
     </div>
-
-
 </div>
+
+<footer>
+    <div class="footer_wrapper">
+        <img src="img/hedgehog_footer.svg">
+        <p>© 2016 HedgehogMusic. Vano Group. All rights reserved.</p>
+    </div>
+</footer>
 
 <script src="js/script.js"></script>
 </body>

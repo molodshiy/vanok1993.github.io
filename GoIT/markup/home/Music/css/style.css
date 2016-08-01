@@ -17,28 +17,29 @@ body {
 li {
     list-style: none;
 }
-/**/
+
 h1 {
     color: #ffffff;
     font-size: 50px;
 }
-/**/
+
 h2 {
     color: #70ccd7;
     font-size: 24px;
     padding: 15px 0 0 10px;
     text-transform: uppercase;
 }
-/**/
+
+h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
 a {
     color: #888;
     text-decoration: none;
 }
-/**/
-#wrapper {
-    float: left;
-}
-/**/
+
 header {
     height: 66px;
     
@@ -92,8 +93,12 @@ header {
     float: left;
 }
 
-.wrapper_sort select {
-    float: right;
+.select_sort {
+    width: 80px;
+    background: #010405;
+    color: #545555;
+    border: none;
+    margin-left: 30px;
 }
 
 
@@ -105,11 +110,8 @@ header {
     background-color: #1d3538;
 }
 
-.album_active {
-    color: #ffffff;
-}
-
 .about_band {
+    display: flex;
     padding: 20px;
     background-color: #0c1719;
 }
@@ -149,10 +151,22 @@ header {
 
 .wrapper_content{
     margin: 22px 22px 22px 322px;
+    height: 100vh;
 }
 
 .albums {
     display: none;
+}
+
+.album_img {
+    float: left;
+    padding: 20px;
+    margin: 0 20px 20px 0;
+    border-right: 1px solid #10191d;
+}
+
+.wrapper {
+    float: left;
 }
 
 .list_albums li {
@@ -169,7 +183,9 @@ header {
     display: none;
 }
 
-
+.content_band {
+    float: left;
+}
 
 
 ol {
@@ -199,8 +215,25 @@ li.playing:before {
     content: '♬';
     position: absolute;
     left: 8px;
-    top: 12px;
-    color: #000;
+    top: 4px;
+    color: #fff;
     font-size: 13px;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    height: 143px;
+    font-size: 14px;
+    background-color: #000;
+}
+
+.footer_wrapper {
+    margin: 0 auto;
+    width: 410px;
+    text-align: center;
+}
+
+footer img {
+    width: 190px;
+    height: 110px;
 }

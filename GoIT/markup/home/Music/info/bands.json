@@ -2,7 +2,7 @@
   "bands": [
     {
       "id": 1,
-      "band_name": "Muse",
+      "band_name": "MUSE",
       "members": [
         "Matt Bellamy",
         "Chris Wolstenholme",
@@ -12,6 +12,7 @@
       "rate": 5,
       "origin": 1992,
       "band_photo": "muse.jpg",
+      "about_band": "Muse are an English rock band from Teignmouth, Devon, formed in 1994. The band consists of Matt Bellamy (lead vocals, guitar, piano, keyboards), Chris Wolstenholme (bass guitar, backing vocals, keyboards) and Dominic Howard (drums, percussion).",
       "albums": [
         {
           "name": "Showbiz",
@@ -52,7 +53,7 @@
     },
     {
       "id": 2,
-      "band_name": "AC/DC",
+      "band_name": "ACDC",
       "members": [
         "Angus Young",
         " Cliff Williams",
@@ -60,9 +61,10 @@
         "Chris Slade"
       ],
       "country": "AU",
-      "rate": 4,
+      "rate": 3,
       "origin": 1971,
       "band_photo": "acdc.jpg",
+      "band_about": "AC/DC are an Australian rock band, formed in 1973 by brothers Malcolm and Angus Young.[1] A hard rock/blues rock band,[2] they have also been considered a heavy metal band, although they have always dubbed their music simply rock and roll.",
       "albums": [
         {
           "name": "High Voltage",
@@ -156,9 +158,10 @@
         "John Dolmayan"
       ],
       "country": "AM",
-      "rate": 5,
+      "rate": 4,
       "origin": 1995,
       "band_photo": "soad.jpg",
+      "about_band": "System of a Down, sometimes shortened to SOAD or System, is a four-piece Armenian-American rock band formed in 1994 in Glendale, California, in the United States. The band currently consists of Serj Tankian (lead vocals, keyboards), Daron Malakian (vocals, guitar), Shavo Odadjian (bass, backing vocals) and John Dolmayan (drums).",
       "albums": []
     }
   ]
