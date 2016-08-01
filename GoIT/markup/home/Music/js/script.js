@@ -22,8 +22,7 @@ $(function () {
     function funcSuccess(data) {
         objBands = data;
         data.bands.forEach(function (s, i) {
-            var newObjBand = createCopyBand(s);
-            copyObjBandForSort.bands[i] = newObjBand;
+            copyObjBandForSort.bands[i] = createCopyBand(s);
         });
         writeBandName();
     }
@@ -36,10 +35,8 @@ $(function () {
             this.rate = rate;
         }
 
-        var newObj = new ObjBandCopy(s.band_name, s.origin, s.rate);
-        return newObj;
-    };
-
+        return new ObjBandCopy(s.band_name, s.origin, s.rate);
+    }
 
     function writeBandName() {
         objBands.bands.forEach(function (s, i) {
@@ -55,69 +52,55 @@ $(function () {
                 $("select option:selected").each(function () {
                     str += $(this).text() + "";
                 });
-                var sortedArr = [];
                 var sortedName = [];
 
                 switch (str) {
                     case 'Name':
-                        copyObjBandForSort.bands.forEach(function (s, i) {
-                            sortedArr[i] = s.name;
-                        });
-                        sortedArr.sort(compareName);
-                        sortedName = sortedArr;
+                        copyObjBandForSort.bands.sort(compareName);
+                        writeSortedName();
                         break;
 
                     case 'Year':
-                        copyObjBandForSort.bands.forEach(function (s, i) {
-                            sortedArr[i] = s.origin;
-                        });
-                        sortedArr.sort(compareOrigin);
-                        for (var j = 0; j < sortedArr.length; j++) {
-                            copyObjBandForSort.bands.forEach(function (s, i) {
-                                if (s.origin === sortedArr[j]) {
-                                    sortedName[j] = s.name;
-                                }
-                            });
-                        }
+                        copyObjBandForSort.bands.sort(compareOrigin);
+                        writeSortedName();
                         break;
 
                     case 'Rate':
-                        copyObjBandForSort.bands.forEach(function (s, i) {
-                            sortedArr[i] = s.rate;
-                        });
-                        sortedArr.sort(compareRate);
-                        for (var j = 0; j < sortedArr.length; j++) {
-                            copyObjBandForSort.bands.forEach(function (s, i) {
-                                if (s.rate === sortedArr[j]) {
-                                    sortedName[j] = s.name;
-                                }
-                            });
-                        }
+
+                        copyObjBandForSort.bands.sort(compareRate);
+                        writeSortedName();
                         break;
                 }
 
-                $('.list_bands').text("");
+                function writeSortedName() {
+                    copyObjBandForSort.bands.forEach(function (s, i) {
+                        sortedName[i] = s.name;
+                    });
+                }
+
+                var $listBans = $('.list_bands');
+
+                $listBans.text("");
 
                 for (var j = 0; j < sortedName.length; j++) {
-                    $('.list_bands').append($('<li>' + sortedName[j] + '</li>'));
+                    $listBans.append($('<li>' + sortedName[j] + '</li>'));
                 }
-                ;
-                $('.list_bands').children().on('click', showBand);
+
+                $listBans.children().on('click', showBand);
             })
             .trigger("change");
 
         function compareName(a, b) {
-            return a.localeCompare(b);
+            return a.name.localeCompare(b.name);
         }
 
         function compareOrigin(a, b) {
-            return a - b;
+            return a.origin - b.origin;
         }
 
         function compareRate(a, b) {
-            return b - a;
+            return b.rate - a.rate;
         }
-
     }
 
     function showBand() {
@@ -129,7 +112,7 @@ $(function () {
 
         var $currentElementBandName = $currentElementBand.text();
 
-        objBands.bands.forEach(function (s, i) {
+        objBands.bands.forEach(function (s) {
             if (s.band_name === $currentElementBandName) {
                 bandId = s.id;
                 var imgBand = "img/" + s.band_photo;
@@ -163,45 +146,37 @@ $(function () {
             var albumImgSrc = "img/albums/" + albums[i].cover;
             var imgAlbum = '<img class= "album_img" src="' + albumImgSrc + '">';
             boxPlayer.append(imgAlbum);
-            boxPlayer.append('<div class="wrapper"><audio preload></audio> <ol class="list_songs"></ol></div>');
         });
-
-        player(albumName);
-        $('.list_albums').children().on('click', changeClassActive);
+        listAlbums.children().on('click', changeClassActive);
     }
 
     function changeClassActive() {
+
+        $(this).off('click');
+
         $('.active_album_name').removeClass('active_album_name');
         $(this).children().filter($('.album_name')).addClass('active_album_name');
 
-        $('.album_active').addClass('album_hide');
-        $('.album_active').removeClass('album_active');
+        var $albumActive = $('.album_active');
+        $albumActive.addClass('album_hide')
+            .removeClass('album_active');
 
-        var q = $(this).find('.album_hide');
-        q.removeClass('album_hide');
-        q.addClass('album_active');
+        $(this).find('.album_hide')
+            .removeClass('album_hide')
+            .addClass('album_active');
+
+        $('.wrapper').remove();
+        $albumActive.append('<div class="wrapper"></div>');
+        player();
     }
 
-    function player(albumName) {
-        //Player
+    function player() {
+        $('.wrapper').append('<audio preload></audio> <ol class="list_songs"></ol>')
 
-        $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/Cave.mp3">Cave</a></li>');
-        $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/Cave.mp3">Cave</a></li>');
-        $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/Cave.mp3">Cave</a></li>');
-        $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/Cave.mp3">Cave</a></li>');
-        $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/Cave.mp3">Cave</a></li>');
-
-        //Find soungs
-        /*$.ajax({
-         url: "info/mp3/muse/showbiz/",
-         success: function(data){
-         $(data).find('a:contains(" .mp3 ")').each(function(){
-         // will loop through
-         alert("Found a file: " + $(this).attr("href"));
-         });
-         }
-         });*/
-
+        var songs = objBands.bands[0].albums[0].songs;
+        for (var i = 0; i < songs.length; i++) {
+            $('.list_songs').append('<li><a href="#" data-src="info/mp3/muse/showbiz/' + songs[i] + '.mp3"></a>' + songs[i] + '</li>');
+        }
         // Setup the player to autoplay the next track
         var a = audiojs.createAll({
             trackEnded: function () {
@@ -214,11 +189,12 @@ $(function () {
         });
         // Load in the first track
         var audio = a[0];
+        var $olLi = $('ol li');
         first = $('ol a').attr('data-src');
-        $('ol li').first().addClass('playing');
+        $olLi.first().addClass('playing');
         audio.load(first);
         // Load in a track on click
-        $('ol li').click(function (e) {
+        $olLi.click(function (e) {
             e.preventDefault();
             $(this).addClass('playing').siblings().removeClass('playing');
             audio.load($('a', this).attr('data-src'));
@@ -245,6 +221,3 @@ $(function () {
     }
 })
 ;
-/*var imgBand = "<img src=" + "\"img/" + s.band_photo + "\"" + ">";
- $('.about_band')
- .append(imgBand);*/

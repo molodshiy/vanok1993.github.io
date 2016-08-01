@@ -17,7 +17,8 @@
         {
           "name": "Showbiz",
           "cover": "showbiz.jpg",
-          "year": 1999
+          "year": 1999,
+          "songs": ["Cave", "Escape", "Falling Down", "Fillip", "Hate This Ill Love You", "Muscle Museum", "Overdue", "Showbiz", "Sober", "Sunburn", "Unintended", "Uno" ]
         },
         {
           "name": "Origin of Symmetry",
@@ -158,7 +159,7 @@
         "John Dolmayan"
       ],
       "country": "AM",
-      "rate": 4,
+      "rate": 5,
       "origin": 1995,
       "band_photo": "soad.jpg",
       "about_band": "System of a Down, sometimes shortened to SOAD or System, is a four-piece Armenian-American rock band formed in 1994 in Glendale, California, in the United States. The band currently consists of Serj Tankian (lead vocals, keyboards), Daron Malakian (vocals, guitar), Shavo Odadjian (bass, backing vocals) and John Dolmayan (drums).",
