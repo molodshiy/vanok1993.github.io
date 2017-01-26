@@ -639,6 +639,7 @@ footer {
     header {
         width: 480px;
         text-align: center;
+        padding: 60px 0 0 12px;
     }
 
     .logo {
@@ -661,22 +662,27 @@ footer {
 
     .nav_mobile a {
         text-decoration: none;
+        display: block;
+        line-height: 40px;
     }
 
     .nav_menu_item {
         position: relative;
     }
 
-    .nav_menu_item:hover {
-        background-color: #2b2231;
+    .nav_menu_mobile {
+        border-radius: 5px 5px 0 0;
+        padding-top: 10px;
     }
 
     .sub_nav_menu {
         display: none;
         position: absolute;
-        top: 45px;
+        top: 40px;
         width: 260px;
-
+        background-color: #3b2e43;
+        border-radius: 0 0 5px 5px;
+        padding-bottom: 10px;
     }
 
     .nav_menu_mobile li {
@@ -684,10 +690,84 @@ footer {
         margin: 0;
     }
 
-    .nav_menu_mobile li:hover .sub_nav_menu {
-        background-color: #2b2231;
+    .nav_menu_mobile:hover {
+        background-color: #3b2e43;
+    }
+
+    .nav_mobile:hover .sub_nav_menu {
         display: block;
         z-index: 100;
     }
 
+    .nav_mobile a:hover {
+        box-sizing: border-box;
+        height: 40px;
+        border-bottom: 2px solid #edbfff;
+        background-color: #2b2231;
+    }
+
+    .wrapper {
+        width: 480px;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .description {
+        width: 180px;
+        margin: 140px 0 0 14px;
+    }
+
+    .description p {
+        display: none;
+    }
+
+    .description h1 {
+        font-size: 34px;
+    }
+
+    .description h2 {
+        font-size: 16px;
+    }
+
+    .main_img {
+        margin-left: 0;
+    }
+
+    .leftTurn, .rightTurn {
+        top: 31%;
+    }
+
+    .leftTurn {
+        left: -3%;
+    }
+
+    .rightTurn {
+        right: -3%;
+    }
+
+    .slider:before {
+        top: 20px;
+        height: 340px;
+    }
+
+    .indexSlider {
+        height: 40px;
+    }
+
+    .indexCircle {
+        top: 9px;
+    }
+
+    .sliderCircles {
+        top: 10px;
+    }
+
+    .about_wrapper {
+        width: 480px;
+    }
+
+    .block_about {
+        width: 100%;
+        margin-left: 69px;
+    }
 }
